@@ -90,7 +90,7 @@ const AboutSection = () => {
         viewport={{ amount: 0.3, once: false}}
 
         className='mt-10 max-sm:ml-0 place-self-start'>
-          <Image src="/image/AboutMePhoto.png" width={350} height={350} alt="AboutMe Pic" className='rounded-4xl'/>
+          <Image src="https://alriswong.github.io/MyPortfolio/image/AboutMePhoto.png" width={350} height={350} alt="AboutMe Pic" className='rounded-4xl'/>
         </motion.div>
         
 

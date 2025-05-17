@@ -11,7 +11,7 @@ const projectData = [
         title: "Karma",
         description: "Team Leader, Game Programmer",
         technologies: ["UnityURP","C#","XR Interaction Toolkit","SteamVR"], 
-        image: "/image/Project/Karma_website.jpg",
+        image: "https://alriswong.github.io/MyPortfolio/image/Project/Karma_website.jpg",
         tag: ["All","Games"],
         
         previewUrl:"/Karma",
@@ -21,7 +21,7 @@ const projectData = [
         title: "Catja",
         description: "Game Programmer",
         technologies: ["Unity","C#","XR Interaction Toolkit"], 
-        image: "/image/Project/Catja_Cover.png",
+        image: "https://alriswong.github.io/MyPortfolio/image/Project/Catja_Cover.png",
         tag: ["All","Games"],
         
         previewUrl:"/Catja",
@@ -31,7 +31,7 @@ const projectData = [
         title: "互動環",
         description: "Game Programmer, Gameplay Design, Controller Design & Programming",
         technologies: ["Unity","C#","Playfab", "Arduino"], 
-        image: "/image/Project/InteractionCircle_GameCover.png",
+        image: "https://alriswong.github.io/MyPortfolio/image/Project/InteractionCircle_GameCover.png",
         tag: ["All","Games"],
         
         previewUrl:"/Interaction_Circle",
@@ -41,7 +41,7 @@ const projectData = [
         title: "醫護Fighting!",
         description: "Game Programmer",
         technologies: ["Unity","C#","AR Foundation", "Manomotion SDK", "Android"], 
-        image: "/image/Project/醫護fighting_poster.png",
+        image: "https://alriswong.github.io/MyPortfolio/image/Project/醫護fighting_poster.png",
         tag: ["All","Games"],
         
         previewUrl:"/Doctor_fighting",
@@ -51,7 +51,7 @@ const projectData = [
         title: "My Portfolio Website",
         description: "Frontend Developer",
         technologies: ["Next.js","TailwindCSS","Farmer Motion","EmailJS","Shadcn/ui"], 
-        image: "/image/Project/Alris_My_portfolio.png",
+        image: "https://alriswong.github.io/MyPortfolio/image/Project/Alris_My_portfolio.png",
         tag: ["All","Website"],
         
         previewUrl:"/",
@@ -61,7 +61,7 @@ const projectData = [
         title: "Square Pattern Wallpaper Creator",
         description: "Web Developer",
         technologies: ["Html","CSS","p5.js"], 
-        image: "/image/Project/SquarePatternWallpaperCreator2.png",
+        image: "https://alriswong.github.io/MyPortfolio/image/Project/SquarePatternWallpaperCreator2.png",
         tag: ["All","Website"],
         
         previewUrl:"https://codepen.io/Alris-Wong/pen/zxxXYPj",
@@ -71,7 +71,7 @@ const projectData = [
         title: "Hot Spring Dashboard",
         description: "Frontend Developer",
         technologies: ["Html","CSS","JavaScript","Python","Mapbox","Apache ECarts"], 
-        image: "/image/Project/HotSpring_Dashboard.png",
+        image: "https://alriswong.github.io/MyPortfolio/image/Project/HotSpring_Dashboard.png",
         tag: ["All","Website"],
         
         previewUrl:"https://www.youtube.com/watch?v=ZMHLLIs0lLw",
