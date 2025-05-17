@@ -10,8 +10,8 @@ const nextConfig: NextConfig = {
   output: 'export',
   distDir: 'dist',
   images: {
-    loader: "custom",
-    loaderFile: './ImageLoader.jsx' // Disable default image optimization
+    domains: ['https://alriswong.github.io/MyPortfolio'],     
+    unoptimized: true, // Disable default image optimization
   },
 };
 
