@@ -10,7 +10,8 @@ const nextConfig: NextConfig = {
   output: 'export',
   distDir: 'dist',
   images: {
-    domains: ['https://alriswong.github.io/MyPortfolio'],     
+    remotePatterns: [new URL('https://alriswong.github.io/MyPortfolio/**')],
+        
     unoptimized: true, // Disable default image optimization
   },
 };
