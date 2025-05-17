@@ -10,7 +10,8 @@ const nextConfig: NextConfig = {
   output: 'export',
   distDir: 'dist',
   images: {
-    unoptimized: true, // Disable default image optimization
+    loader: "custom",
+    loaderFile: './ImageLoader.jsx' // Disable default image optimization
   },
 };
 
