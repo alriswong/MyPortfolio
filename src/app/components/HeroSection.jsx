@@ -78,7 +78,7 @@ const HeroSection = () => {
 
                     <div className="absolute top-0 bottom-0 left-0 right-0 mx-auto max-sm:right-10 animate-codingSymbolAnimation w-[130px] h-[130px] lg:w-[200px] lg:h-[200px]">                   
                         <Image 
-                        src="/image/3D_Programming_Icon.png" 
+                        src="https://alriswong.github.io/MyPortfolio/image/3D_Programming_Icon.png" 
                         alt="profilePic" 
                         width={350} 
                         height={350}/>
@@ -86,7 +86,7 @@ const HeroSection = () => {
 
                     <div className="absolute top-20 bottom-0 left-25 right-0 mx-auto max-sm:top-15 max-sm:left-20 animate-vrSymbolAnimation w-[100px] h-[100px] lg:w-[180px] lg:h-[180px]">
                         <Image 
-                        src="/image/3D_VR.png" 
+                        src="https://alriswong.github.io/MyPortfolio/image/3D_VR.png" 
                         alt="profilePic" 
                         width={250} 
                         height={250} />
