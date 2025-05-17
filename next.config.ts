@@ -10,7 +10,8 @@ const nextConfig: NextConfig = {
   output: 'export',
   distDir: 'dist',
   images: {
-    remotePatterns: [new URL('https://alriswong.github.io/MyPortfolio/**')],
+    loader: "custom",
+    loaderFile: './ImageLoader.jsx',
         
     unoptimized: true, // Disable default image optimization
   },
