@@ -41,7 +41,7 @@ const I_GameplaySection = () => {
                 viewport={{ amount: 0.3, once: true}}
                 
                 className='xl:grid xl:grid-cols-12 place-items-center mx-auto'>
-                    <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={"https://alriswong.github.io/MyPortfolio/image/project/Controller_Choosing.png"} width={800} height={600} alt='ControlGroup'></Image>
+                    <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={"https://alriswong.github.io/MyPortfolio/image/Project/Controller_Choosing.png"} width={800} height={600} alt='ControlGroup'></Image>
                     <p className='col-span-4 xl:col-start-9 text-subHeadingColor text-xl mb-5'>There are two controller combinations: the larger controller is designed for adults, while the smaller controller is intended for children. 
                         <br />
                         In Combination 1, the larger controller is used to perform the gripping action, and the smaller controller is used for the swinging action. 
@@ -57,7 +57,7 @@ const I_GameplaySection = () => {
                 
                 className='xl:grid xl:grid-cols-12 items-center'>
                     
-                    <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={"https://alriswong.github.io/MyPortfolio/image/project/Interaction_Circle_grip.gif"} width={800} height={600} alt='Grip'></Image>
+                    <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={"https://alriswong.github.io/MyPortfolio/image/Project/Interaction_Circle_grip.gif"} width={800} height={600} alt='Grip'></Image>
                     <p className='col-span-4 col-start-9 text-subHeadingColor text-xl mb-5'>To control the character’s jump, one player must first grip the controller to charge the energy meter.</p>
                    
                 </motion.div>
@@ -69,7 +69,7 @@ const I_GameplaySection = () => {
                 viewport={{ amount: 0.3, once: true}}
                 
                 className='xl:grid xl:grid-cols-12 items-center'>
-                    <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={"https://alriswong.github.io/MyPortfolio/image/project/Interaction_Circle_swing.gif"} width={800} height={600} alt='Swing'></Image>
+                    <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={"https://alriswong.github.io/MyPortfolio/image/Project/Interaction_Circle_swing.gif"} width={800} height={600} alt='Swing'></Image>
                     <p className='col-span-4 col-start-9 text-subHeadingColor text-xl mb-5'>Once fully charged, the other player swings the controller to execute the jump.</p>
                     
                 </motion.div>
@@ -81,7 +81,7 @@ const I_GameplaySection = () => {
                 viewport={{ amount: 0.3, once: true}}
                 
                 className='xl:grid xl:grid-cols-12 items-center'>
-                    <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={"https://alriswong.github.io/MyPortfolio/image/project/I_Login.png"} width={800} height={600} alt='Login'></Image>
+                    <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={"https://alriswong.github.io/MyPortfolio/image/Project/I_Login.png"} width={800} height={600} alt='Login'></Image>
                     <p className='col-span-4 col-start-9 text-subHeadingColor text-xl mb-5'>PlayFab was integrated to manage user training data, allowing players to create accounts, log in, and track their personal training records.</p>
                     
                 </motion.div>
@@ -93,7 +93,7 @@ const I_GameplaySection = () => {
                 viewport={{ amount: 0.3, once: true}}
                 
                 className='xl:grid xl:grid-cols-12 items-center'>
-                    <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={"https://alriswong.github.io/MyPortfolio/image/project/Leaderboard.png"} width={800} height={600} alt='Leaderboard'></Image>
+                    <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={"https://alriswong.github.io/MyPortfolio/image/Project/Leaderboard.png"} width={800} height={600} alt='Leaderboard'></Image>
                     <p className='col-span-4 col-start-9 text-subHeadingColor text-xl mb-5'>Upon completing the game, the player's score is automatically uploaded to the leaderboard.</p>
                     
                 </motion.div>
@@ -105,7 +105,7 @@ const I_GameplaySection = () => {
                 viewport={{ amount: 0.3, once: true}}
                 
                 className='xl:grid xl:grid-cols-12 items-center'>
-                    <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={"https://alriswong.github.io/MyPortfolio/image/project/Single&Mutiplay.png"} width={800} height={600} alt='Single&Mutiplay'></Image>
+                    <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={"https://alriswong.github.io/MyPortfolio/image/Project/Single&Mutiplay.png"} width={800} height={600} alt='Single&Mutiplay'></Image>
                     <p className='col-span-4 col-start-9 text-subHeadingColor text-xl mb-5'>A single-player mode is also available.</p>
                     
                 </motion.div>
@@ -117,7 +117,7 @@ const I_GameplaySection = () => {
                 viewport={{ amount: 0.3, once: true}}
                 
                 className='xl:grid xl:grid-cols-12 items-center'>
-                    <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={"https://alriswong.github.io/MyPortfolio/image/project/Type_of_Training.png"} width={800} height={600} alt='Training'></Image>
+                    <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={"https://alriswong.github.io/MyPortfolio/image/Project/Type_of_Training.png"} width={800} height={600} alt='Training'></Image>
                     <p className='col-span-4 col-start-9 text-subHeadingColor text-xl mb-5'>The game includes both grip strength training and swinging training, while maintaining the hopscotch-based gameplay.</p>
                     
                 </motion.div>
@@ -129,7 +129,7 @@ const I_GameplaySection = () => {
                 viewport={{ amount: 0.3, once: true}}
                 
                 className='xl:grid xl:grid-cols-12 items-center'>
-                    <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={"https://alriswong.github.io/MyPortfolio/image/project/Timer.png"} width={800} height={600} alt='Timer'></Image>
+                    <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={"https://alriswong.github.io/MyPortfolio/image/Project/Timer.png"} width={800} height={600} alt='Timer'></Image>
                     <p className='col-span-4 col-start-9 text-subHeadingColor text-xl mb-5'>
                         A countdown timer can be set to customize the duration of the training session.</p>
                     
@@ -142,7 +142,7 @@ const I_GameplaySection = () => {
                 viewport={{ amount: 0.3, once: true}}
                 
                 className='xl:grid xl:grid-cols-12 items-center'>
-                    <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={"https://alriswong.github.io/MyPortfolio/image/project/Record_of_training.png"} width={800} height={600} alt='Record of Training'></Image>
+                    <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={"https://alriswong.github.io/MyPortfolio/image/Project/Record_of_training.png"} width={800} height={600} alt='Record of Training'></Image>
                     <p className='col-span-4 col-start-9 text-subHeadingColor text-xl mb-5'>
                         The game records both the measured grip strength and the number of swings as part of the final training results.</p>
                     

@@ -34,17 +34,18 @@ const I_HeroSection = () => {
         </div>
         
         <div className='place-items-center xl:col-span-7 xl:col-start-7 xl:mt-10 2xl:mt-0'>
-          <motion.iframe 
-          initial= {{scale:0.5 , opacity:0}} 
-          whileInView={{scale:1 , opacity:1}}
-          transition={{duration: 1 , type:'spring'}} 
-          viewport={{ amount: 0.3, once: true}}
-                  
-          className='w-sm md:w-full h-85 md:h-120' width="760" height="515" src="https://www.youtube.com/embed/3cyWcJniNF4?rel=0&autoplay=0&mute=1&showinfo=0&modestbranding=1&playsinline=1&controls=1" title="互動環_Demo" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></motion.iframe> 
+          <div className='w-full aspect-[9/16] max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg mx-auto'>
+            <motion.iframe 
+            initial= {{scale:0.5 , opacity:0}} 
+            whileInView={{scale:1 , opacity:1}}
+            transition={{duration: 1 , type:'spring'}} 
+            viewport={{ amount: 0.3, once: true}}
+                    
+            className='w-full h-full rounded-lg' src="https://www.youtube.com/embed/3cyWcJniNF4?rel=0&autoplay=0&mute=1&showinfo=0&modestbranding=1&playsinline=1&controls=1" title="互動環_Demo" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></motion.iframe> 
+          </div>
         </div>
-           
-        
+                   
       </div>
     </section>
   )

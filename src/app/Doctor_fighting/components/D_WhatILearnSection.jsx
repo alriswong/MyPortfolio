@@ -45,7 +45,7 @@ const M_GameplaySection = () => {
             className='md:col-span-6 lg:col-span-7'>
                 
                 
-                <Image src={"https://alriswong.github.io/MyPortfolio/image/project/DoctorFighting_Attack.gif"} width={400} height={400} alt='Attack'></Image>
+                <Image src={"https://alriswong.github.io/MyPortfolio/image/Project/DoctorFighting_Attack.gif"} width={400} height={400} alt='Attack'></Image>
                 
             </motion.div>
 
@@ -76,7 +76,7 @@ const M_GameplaySection = () => {
             
             className='md:col-span-6 lg:col-span-7'>
                 
-                <Image src={"https://alriswong.github.io/MyPortfolio/image/project/DoctorFighting_Jump.gif"} width={400} height={400} alt='Defence'></Image>
+                <Image src={"https://alriswong.github.io/MyPortfolio/image/Project/DoctorFighting_Jump.gif"} width={400} height={400} alt='Defence'></Image>
             </motion.div>
 
             <motion.div

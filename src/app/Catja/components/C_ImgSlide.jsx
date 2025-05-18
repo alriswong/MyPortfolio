@@ -8,9 +8,9 @@ import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from "embla-carousel-autoplay"
 
 const image = [
-    "https://alriswong.github.io/MyPortfolio/image/project/C_GameScene1.png",
-    "https://alriswong.github.io/MyPortfolio/image/project/C_DisplayDemo1.jpeg",
-    "https://alriswong.github.io/MyPortfolio/image/project/C_DisplayDemo2.jpeg"
+    "https://alriswong.github.io/MyPortfolio/image/Project/C_GameScene1.png",
+    "https://alriswong.github.io/MyPortfolio/image/Project/C_DisplayDemo1.jpeg",
+    "https://alriswong.github.io/MyPortfolio/image/Project/C_DisplayDemo2.jpeg"
 ]
 
 const C_ImgSlide = () => {
