@@ -30,6 +30,12 @@ const Navbar = () => {
         sideMenuRef.current.style.transform = 'translate(16rem)'
     }
 
+    const [activeIndex, setActiveIndex] = useState(null);
+    const handleNavClick = (index) => {
+        setActiveIndex(index);
+        setTimeout(() => setActiveIndex(null), 1000); // effect lasts 200ms
+    };
+
   return (
     <nav className='fixed mx-auto border border-[#33353F] border-l-transparent border-r-transparent top-0 left-0 right-0 z-50 bg-black bg-opacity-100'>
         <div className='flex flex-wrap items-center justify-between mx-auto px-5 md:px-15 xl:px-20 py-4 2xl:px-30 lg:py-4'>
@@ -40,7 +46,8 @@ const Navbar = () => {
                     <ul className="flex flex-row space-x-8 mt-0">
                     {navLinks.map((link, index) => (
                         <li key={index}>
-                        <NavLink href={link.path} title={link.title} />
+                        <NavLink href={link.path} title={link.title} isActive={activeIndex === index}
+                            onClick={() => handleNavClick(index)}/>
                         </li>
                     ))}
                     </ul>
@@ -66,7 +73,8 @@ const Navbar = () => {
                 <ul className="flex flex-col space-y-8 mt-5" onClick={menuClose}>
                     {navLinks.map((link, index) => (
                     <li key={index}>
-                        <NavLink href={link.path} title={link.title} />
+                        <NavLink href={link.path} title={link.title} isActive={activeIndex === index}
+                            onClick={() => handleNavClick(index)}/>
                     </li>
                     ))}
                 </ul>
