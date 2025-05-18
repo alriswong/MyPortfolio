@@ -31,15 +31,18 @@ const C_HeroSection = () => {
           </motion.p>
         </div>
         
-        <div className='place-items-center xl:col-span-7 xl:col-start-7 xl:mt-10 2xl:mt-0'>
-          <motion.iframe 
-          initial= {{scale:0.5 , opacity:0}} 
-          whileInView={{scale:1 , opacity:1}}
-          transition={{duration: 1 , type:'spring'}} 
-          viewport={{ amount: 0.3, once: true}}
-                  
-          className='w-sm md:w-full h-85 md:h-120' width="760" height="515" src="https://www.youtube.com/embed/S46IGAzI4L4?si=-LIURDhO-b74mvtW?rel=0&autoplay=0&mute=1&showinfo=0&modestbranding=1&playsinline=1&controls=1" 
-          title="Catja_Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></motion.iframe> 
+        <div className='place-items-center xl:col-span-7 xl:col-start-7 xl:mt-20 2xl:mt-0'>
+          <div className='w-full max-h-62 md:max-h-80 2xl:max-h-125 aspect-[9/16] max-w-xs md:max-w-xl xl:max-w-2xl mx-auto'>
+            <motion.iframe 
+            initial= {{scale:0.5 , opacity:0}} 
+            whileInView={{scale:1 , opacity:1}}
+            transition={{duration: 1 , type:'spring'}} 
+            viewport={{ amount: 0.3, once: true}}
+                    
+            className='w-full h-full rounded-lg' src="https://www.youtube.com/embed/S46IGAzI4L4?si=-LIURDhO-b74mvtW?rel=0&autoplay=0&mute=1&showinfo=0&modestbranding=1&playsinline=1&controls=1" 
+            title="Catja_Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></motion.iframe>
+          </div>
+           
         </div>
 
           
