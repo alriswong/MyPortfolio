@@ -7,7 +7,7 @@ import I_Gameplay from './components/I_GameplaySection'
 
 const InteractionCircle = () => {
   return (
-    <main className="flex flex-col bg-black ">
+    <main className="flex flex-col bg-black overflow-clip">
       <I_Navbar />
       <div className='container mt-18 xl:mt-26 mx-auto px-5 md:px-8'>
         <I_HeroSection />

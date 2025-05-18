@@ -7,7 +7,7 @@ import D_WhatILearnSection from './components/D_WhatILearnSection'
 
 const MedicalTeamFightingPage = () => {
   return (
-    <main className="flex flex-col bg-black ">
+    <main className="flex flex-col bg-black overflow-clip">
       <D_Navbar />
       <div className='container mt-18 xl:mt-26 mx-auto px-5 md:px-8'>
         <D_HeroSection />

@@ -42,7 +42,7 @@ const C_GameplaySection = () => {
             viewport={{ amount: 0.3, once: true}}
             
             className='xl:grid xl:grid-cols-12 place-items-center mx-auto'>
-            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'/image/Project/Catja_Climb.gif'} width={800} height={450} alt='Climb'></Image>
+            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'https://alriswong.github.io/MyPortfolio/image/Project/Catja_Climb.gif'} width={800} height={450} alt='Climb'></Image>
             <p className='col-span-4 col-start-9 text-subHeadingColor text-xl mb-5'> When the VR controller button is pressed, a Fixed Joint is dynamically generated in real time to connect the player’s hand (which has a Rigidbody component) to a climbable object. 
             This setup enables the character to ascend by simulating realistic physical interactions—mimicking the pulling motion of climbing through Unity’s physics engine.
             </p>
@@ -55,7 +55,7 @@ const C_GameplaySection = () => {
             viewport={{ amount: 0.3, once: true}}
             
             className='xl:grid xl:grid-cols-12 place-items-center mx-auto'>
-            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'/image/Project/Catja_Jump.gif'} width={800} height={450} alt='Jump'></Image>
+            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'https://alriswong.github.io/MyPortfolio/image/Project/Catja_Jump.gif'} width={800} height={450} alt='Jump'></Image>
             <p className='col-span-4 col-start-9 text-subHeadingColor text-xl mb-5'> To replicate the springy and agile movement of a cat, Configurable Joints were applied to the character’s hands, with carefully tuned parameters such as spring force, 
             damping, and motion constraints to simulate realistic feline-like jumping behavior.
             </p>
@@ -68,7 +68,7 @@ const C_GameplaySection = () => {
             viewport={{ amount: 0.3, once: true}}
             
             className='xl:grid xl:grid-cols-12 place-items-center mx-auto'>
-            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'/image/Project/Catja_attack.gif'} width={800} height={450} alt='Attack'></Image>
+            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'https://alriswong.github.io/MyPortfolio/image/Project/Catja_attack.gif'} width={800} height={450} alt='Attack'></Image>
             <p className='col-span-4 col-start-9 text-subHeadingColor text-xl mb-5'> 
             To generate a shuriken, the player holds the grip button near the chest area, where a collider detects the action and spawns the shuriken. 
             Releasing the button then throws it forward.
@@ -82,7 +82,7 @@ const C_GameplaySection = () => {
             viewport={{ amount: 0.3, once: true}}
             
             className='xl:grid xl:grid-cols-12 place-items-center mx-auto'>
-            <Image className='col-span-7 mb-5 xl:mb-0 w-4xl xl:w-full' src={'/image/Project/Catja_defence.gif'} width={800} height={450} alt='Defence'></Image>
+            <Image className='col-span-7 mb-5 xl:mb-0 w-4xl xl:w-full' src={'https://alriswong.github.io/MyPortfolio/image/Project/Catja_defence.gif'} width={800} height={450} alt='Defence'></Image>
             <p className='col-span-4 col-start-9 text-subHeadingColor text-xl mb-5'> 
             Pressing the A or X button activates a protective shield for defense.
             </p>
@@ -95,7 +95,7 @@ const C_GameplaySection = () => {
             viewport={{ amount: 0.3, once: true}}
             
             className='xl:grid xl:grid-cols-12 place-items-center mx-auto'>
-            <Image className='col-span-7 mb-5 xl:mb-0 w-4xl 2xl:w-full' src={'/image/Project/Catja_Health.png'} width={800} height={450} alt='HP'></Image>
+            <Image className='col-span-7 mb-5 xl:mb-0 w-4xl 2xl:w-full' src={'https://alriswong.github.io/MyPortfolio/image/Project/Catja_Health.png'} width={800} height={450} alt='HP'></Image>
             <p className='col-span-4 col-start-9 text-subHeadingColor text-xl mb-5'> 
             The player's health is displayed on the back of the hand.
             </p>
@@ -108,7 +108,7 @@ const C_GameplaySection = () => {
             viewport={{ amount: 0.3, once: true}}
             
             className='xl:grid xl:grid-cols-12 place-items-center mx-auto'>
-            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'/image/Project/C_LevelDesign.png'} width={800} height={450} alt='Level Design'></Image>
+            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'https://alriswong.github.io/MyPortfolio/image/Project/C_LevelDesign.png'} width={800} height={450} alt='Level Design'></Image>
             <p className='col-span-4 col-start-9 text-subHeadingColor text-xl mb-5'> 
             The level difficulty increases progressively as the player ascends each floor.
             </p>

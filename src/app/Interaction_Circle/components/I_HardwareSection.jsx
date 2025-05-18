@@ -30,7 +30,7 @@ const I_HardwareSection = () => {
             transition={{duration: 1 , type:'spring'}} 
             viewport={{ amount: 0.3, once: true}} 
             className=''>
-              <Image className='w-sm xl:w-md 2xl:w-lg' src={"/image/project/Controller.jpg"} width={4032} height={3024} alt='I_Exhibition1'></Image>
+              <Image className='w-sm xl:w-md 2xl:w-lg' src={"https://alriswong.github.io/MyPortfolio/image/project/Controller.jpg"} width={4032} height={3024} alt='I_Exhibition1'></Image>
             </motion.div>
             
             <motion.div
@@ -39,7 +39,7 @@ const I_HardwareSection = () => {
             transition={{duration: 1 , type:'spring'}} 
             viewport={{ amount: 0.3, once: true}} 
             className=''>
-              <Image className='w-sm xl:w-md 2xl:w-lg' src={"/image/project/IMG_8995_low.jpg"} width={4032} height={3024} alt='I_Exhibition2'></Image>
+              <Image className='w-sm xl:w-md 2xl:w-lg' src={"https://alriswong.github.io/MyPortfolio/image/project/IMG_8995_low.jpg"} width={4032} height={3024} alt='I_Exhibition2'></Image>
             </motion.div>
           </div>
         </div>  

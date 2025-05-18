@@ -30,13 +30,27 @@ const M_HeroSection = () => {
         </div>
 
         <div className='place-items-center md:col-span-4 md:col-start-8 lg:col-start-9 2xl:col-start-10 mt-10 2xl:mt-0'>
-          <motion.iframe 
+          {/* <motion.iframe 
           initial= {{scale:0.5 , opacity:0}} 
           whileInView={{scale:1 , opacity:1}}
           transition={{duration: 1 , type:'spring'}} 
           viewport={{ amount: 0.1, once: true}}
           className='w-fit' width="378" height="649" src="https://www.youtube.com/embed/k7Cc9-3L8U4?rel=0&autoplay=0&mute=1&showinfo=0&modestbranding=1&playsinline=1&controls=1" 
-          title="醫護Fighting!_Highlight_Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></motion.iframe>
+          title="醫護Fighting!_Highlight_Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></motion.iframe> */}
+
+          <div className="w-full aspect-[9/16] max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg mx-auto">
+            <motion.iframe
+              initial={{scale:0.5 , opacity:0}}
+              whileInView={{scale:1 , opacity:1}}
+              transition={{duration: 1 , type:'spring'}}
+              viewport={{ amount: 0.1, once: true}}
+              className="w-full h-full rounded-lg"
+              src="https://www.youtube.com/embed/k7Cc9-3L8U4?rel=0&autoplay=0&mute=1&showinfo=0&modestbranding=1&playsinline=1&controls=1"
+              title="醫護Fighting!_Highlight_Demo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></motion.iframe>
+          </div>
         </div>
           
       </div>

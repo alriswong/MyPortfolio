@@ -8,9 +8,9 @@ import Autoplay from "embla-carousel-autoplay"
 
 
 const image = [
-  "/image/project/DoctorFighting_menu.jpg",
-  "/image/project/DoctorFighting_Intro.jpg",
-  "/image/project/DoctorFighting_sentence.jpg"
+  "https://alriswong.github.io/MyPortfolio/image/project/DoctorFighting_menu.jpg",
+  "https://alriswong.github.io/MyPortfolio/image/project/DoctorFighting_Intro.jpg",
+  "https://alriswong.github.io/MyPortfolio/image/project/DoctorFighting_sentence.jpg"
 ]
 
 const D_ImgSlide = () => {

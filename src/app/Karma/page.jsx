@@ -6,7 +6,7 @@ import K_GameplaySection from './components/K_GameplaySection'
 
 const page = () => {
   return (
-    <main className="flex flex-col bg-black ">
+    <main className="flex flex-col bg-black overflow-clip">
       <K_Navbar />
       <div className='container mt-22 mx-auto px-5 md:px-8'>
         <K_HeroSection/>

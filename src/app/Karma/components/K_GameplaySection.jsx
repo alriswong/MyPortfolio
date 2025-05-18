@@ -42,7 +42,7 @@ const K_GameplaySection = () => {
             viewport={{ amount: 0.3, once: true}}
             
             className='xl:grid xl:grid-cols-12 items-center mx-auto'>
-            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'/image/Project/Karma_swimming.gif'} width={800} height={450} alt='swimming'></Image>
+            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'https://alriswong.github.io/MyPortfolio/image/Project/Karma_swimming.gif'} width={800} height={450} alt='swimming'></Image>
             <p className='col-span-4 col-start-9 text-subHeadingColor text-xl'> 
               Players can intuitively use the controller to perform swimming motions, allowing them to control the electric eel character's movement in the game.
             </p>
@@ -55,7 +55,7 @@ const K_GameplaySection = () => {
             viewport={{ amount: 0.3, once: true}}
             
             className='xl:grid xl:grid-cols-12 items-center mx-auto'>
-            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'/image/Project/Karma_electricity.gif'} width={800} height={450} alt='Attack'></Image>
+            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'https://alriswong.github.io/MyPortfolio/image/Project/Karma_electricity.gif'} width={800} height={450} alt='Attack'></Image>
             <p className='col-span-4 col-start-9 text-subHeadingColor text-xl'> 
               The electric eel's ability to generate electricity is used as a core mechanic for solving puzzles and progressing through the game.
             </p>
@@ -68,7 +68,7 @@ const K_GameplaySection = () => {
             viewport={{ amount: 0.3, once: true}}
             
             className='xl:grid xl:grid-cols-12 items-center mx-auto'>
-            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'/image/Project/Underwater_clip.gif'} width={800} height={450} alt='Defence'></Image>
+            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'https://alriswong.github.io/MyPortfolio/image/Project/Underwater_clip.gif'} width={800} height={450} alt='Defence'></Image>
             <p className='col-span-4 col-start-9 text-subHeadingColor text-xl'> 
               I created the entire underwater environment using Unity. 
             I designed a realistic water surface effect using custom shaders built with Shader Graph to simulate light refraction, distortion, and surface movement.
@@ -83,7 +83,7 @@ const K_GameplaySection = () => {
             viewport={{ amount: 0.3, once: true}}
             
             className='xl:grid xl:grid-cols-12 items-center mx-auto'>
-            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'/image/Project/K_Flocking_Wind_Movement_Shader.gif'} width={1663} height={935} alt='HP'></Image>
+            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'https://alriswong.github.io/MyPortfolio/image/Project/K_Flocking_Wind_Movement_Shader.gif'} width={1663} height={935} alt='HP'></Image>
             <p className='col-span-4 col-start-9 text-subHeadingColor text-xl'> 
               A Wind Movement Shader was applied to underwater plants to simulate natural motion, mimicking the effect of water currents. 
               Moreover, I used a flocking fish plugin to simulate realistic fish swimming behavior in the underwater environment.
@@ -97,7 +97,7 @@ const K_GameplaySection = () => {
             viewport={{ amount: 0.3, once: true}}
             
             className='xl:grid xl:grid-cols-12 items-center mx-auto'>
-            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'/image/Project/K_Facial_feature_resize.gif'} width={1663} height={935} alt='Level Design'></Image>
+            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'https://alriswong.github.io/MyPortfolio/image/Project/K_Facial_feature_resize.gif'} width={1663} height={935} alt='Level Design'></Image>
             <p className='col-span-4 col-start-9 text-subHeadingColor text-xl'> 
               Facial features can be resized by holding down a button; Releasing the button locks the feature at its current size. After completing facial customization, the modified head can be applied to the character.
             </p>

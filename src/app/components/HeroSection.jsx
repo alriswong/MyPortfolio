@@ -14,7 +14,7 @@ const HeroSection = () => {
             initial= {{opacity: 0}} 
             whileInView={{ opacity: 1}}
             transition={{duration: 1}} 
-            viewport={{ amount: 0.8, once: false}}
+            viewport={{ amount: 0.1, once: false}}
             className="basis-2/3 place-self-center text-center sm:text-left justify-self-start max-sm:mt-55">
                 <h1 className="text-white mb-10 text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-BTcolorOne to-BTcolorTwo">Hello, I'm{""}</span> 
@@ -39,6 +39,7 @@ const HeroSection = () => {
                 initial= {{y:-20 , opacity: 0}} 
                 whileInView={{y:0 ,  opacity: 1}}
                 transition={{duration: 1, delay:0.3}} 
+                viewport={{ amount: 0.1, once: false}}
                 className="text-contentColor text-base md:text-lg mb-6 xl:text-2xl"> 
                     Specialize in creating immersive VR games and building responsive websites. 
                     Passionate about crafting engaging digital experiences that merge creativity with functionality through innovative coding and thoughtful user-centered design.
@@ -50,6 +51,7 @@ const HeroSection = () => {
                         initial= {{scale:0 , opacity: 0}} 
                         whileInView={{scale:1,  opacity: 1}}
                         transition={{duration:0.5, type:'spring', stiffness:70, delay:0.8}}
+                        viewport={{ amount: 0.1, once: false}}
                         className="px-6 py-3 w-full sm:w-fit rounded-full mr-4  text-black bg-gradient-to-br  from-BTcolorOne to-BTcolorTwo hover:scale-110 hover:transition-all hover:duration-300 cursor-pointer">
                         See my projects
                         </motion.button>
@@ -60,6 +62,7 @@ const HeroSection = () => {
                     initial= {{scale:0 , opacity: 0}} 
                     whileInView={{scale:1 ,  opacity: 1}}
                     transition={{duration:0.5, type:'spring', stiffness:70, delay:1.2}}
+                    viewport={{ amount: 0.1, once: false}}
                     className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br hover:scale-110 hover:transition-all hover:duration-300 from-BTcolorOne to-BTcolorTwo text-white mt-3 cursor-pointer">
                         <span className="block bg-black rounded-full px-6 py-2">Download CV</span>
                     </motion.button>
@@ -72,6 +75,7 @@ const HeroSection = () => {
             initial= {{opacity: 0 , scale: 0.3}} 
             whileInView={{ opacity: 1 , scale: 1}}
             transition={{duration: 1, type:'tween'}} 
+            viewport={{ amount: 0.1, once: false}}
             className="relative basis-1/3 mt-8 md:mt-0 ">
                 
                 <div className="absolute top-0 bottom-0 left-0 right-0 mx-auto w-[180px] h-[180px]">
