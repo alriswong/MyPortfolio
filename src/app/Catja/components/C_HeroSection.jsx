@@ -32,7 +32,7 @@ const C_HeroSection = () => {
         </div>
         
         <div className='place-items-center xl:col-span-7 xl:col-start-7 xl:mt-15 2xl:mt-0'>
-          <div className='w-full max-h-62 md:max-h-80 2xl:max-h-105 aspect-[9/16] max-w-xs md:max-w-xl xl:max-w-2xl mx-auto'>
+          <div className='w-full max-h-62 md:max-h-80 2xl:max-h-90 aspect-[9/16] max-w-xs md:max-w-xl xl:max-w-2xl mx-auto'>
             <motion.iframe 
             initial= {{scale:0.5 , opacity:0}} 
             whileInView={{scale:1 , opacity:1}}

@@ -81,7 +81,7 @@ const AboutSection = () => {
   };
 
   return ( 
-    <section className='py-10 md:py-40' id='about'>
+    <section className='py-10 md:py-20 xl:py-40' id='about'>
       <div className='hidden md:grid md:grid-cols-2 gap-8 item-center px-4 xl:gap-16 xl:px-16'>
         <motion.div 
         initial= {{x: -50 , opacity:0}} 
