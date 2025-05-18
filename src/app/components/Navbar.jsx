@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link';
 import NavLink from "./NavLink";
-import React , {useState, useRef }from 'react';
+import React , {useEffect,useState, useRef }from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 
 const navLinks = [
@@ -17,7 +17,8 @@ const navLinks = [
       title: "Contact",
       path: "#contact",
     },
-  ];
+];
+const sectionIds = ["about", "portfolio", "contact"];
 
 const Navbar = () => {
     const sideMenuRef = useRef();
@@ -30,11 +31,29 @@ const Navbar = () => {
         sideMenuRef.current.style.transform = 'translate(16rem)'
     }
 
-    const [activeIndex, setActiveIndex] = useState(null);
-    const handleNavClick = (index) => {
-        setActiveIndex(index);
-        setTimeout(() => setActiveIndex(null), 1000); // effect lasts 200ms
-    };
+    const [activeSection, setActiveSection] = useState(null);
+    
+    useEffect(() => {
+        const handleScroll = () => {
+            let found = null;
+            for (const id of sectionIds) {
+            const el = document.getElementById(id);
+            if (el) {
+                const rect = el.getBoundingClientRect();
+                if (rect.top <= window.innerHeight * 0.2 && rect.bottom >= window.innerHeight * 0.5) {
+                found = id;
+                break;
+                }
+            }
+            }
+            setActiveSection(found);
+        };
+
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        handleScroll(); // Initial check
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
   return (
     <nav className='fixed mx-auto border border-[#33353F] border-l-transparent border-r-transparent top-0 left-0 right-0 z-50 bg-black bg-opacity-100'>
@@ -46,8 +65,8 @@ const Navbar = () => {
                     <ul className="flex flex-row space-x-8 mt-0">
                     {navLinks.map((link, index) => (
                         <li key={index}>
-                        <NavLink href={link.path} title={link.title} isActive={activeIndex === index}
-                            onClick={() => handleNavClick(index)}/>
+                        <NavLink href={link.path} title={link.title} isActive={activeSection === link.path.replace('#', '')}
+                            />
                         </li>
                     ))}
                     </ul>
@@ -73,8 +92,8 @@ const Navbar = () => {
                 <ul className="flex flex-col space-y-8 mt-5" onClick={menuClose}>
                     {navLinks.map((link, index) => (
                     <li key={index}>
-                        <NavLink href={link.path} title={link.title} isActive={activeIndex === index}
-                            onClick={() => handleNavClick(index)}/>
+                        <NavLink href={link.path} title={link.title} isActive={activeSection === link.path.replace('#', '')}
+                            onClick={menuClose}/>
                     </li>
                     ))}
                 </ul>

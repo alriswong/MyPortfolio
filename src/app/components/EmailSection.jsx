@@ -36,8 +36,9 @@ const EmailSection = () => {
 
 
   return (
-    <section className='grid md:grid-cols-2 my-5 md:my-12 py-24 gap-12 sm:gap-8 relative' id='contact'>
-        {/* ----------------- Circle ----------------- */}
+    <section className='my-40 relative' id='contact'>
+        <div className='grid md:grid-cols-2 py-24 gap-12 sm:gap-8'>
+            {/* ----------------- Circle ----------------- */}
         <div className='bg-radial-[at_50%_75%] from-BTcolorTwo/50 to-BTcolorOne/50 to-90% rounded-full h-80 w-80 z-5 blur-lg absolute top-9/10 -left-45 transform -translate-x-1/2 -translate-1/2 max-sm:-left-35 max-sm:h-50'></div>
         <div className='bg-radial-[at_50%_75%] from-BTcolorTwo/50 to-BTcolorOne/50 to-90% rounded-full h-80 w-80 z-5 blur-lg absolute top-2/10 -right-125 transform -translate-x-1/2 -translate-1/2 max-sm:-right-105 max-sm:h-50'></div>
 
@@ -133,6 +134,8 @@ const EmailSection = () => {
                 {success && <p className='text-green-500 mt-4'>Message sent successfully!</p>}
             </form>
         </motion.div>
+        </div>
+        
     </section>
   )
 }
