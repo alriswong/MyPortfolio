@@ -41,7 +41,7 @@ const I_HeroSection = () => {
             transition={{duration: 1 , type:'spring'}} 
             viewport={{ amount: 0.3, once: true}}
                     
-            className='w-full h-full rounded-lg' src="https://www.youtube.com/embed/3cyWcJniNF4?rel=0&autoplay=0&mute=1&showinfo=0&modestbranding=1&playsinline=1&controls=1" title="互動環_Demo" 
+            className='w-full h-fit rounded-lg' src="https://www.youtube.com/embed/3cyWcJniNF4?rel=0&autoplay=0&mute=1&showinfo=0&modestbranding=1&playsinline=1&controls=1" title="互動環_Demo" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></motion.iframe> 
           </div>
         </div>
