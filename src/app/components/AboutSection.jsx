@@ -82,14 +82,14 @@ const AboutSection = () => {
 
   return ( 
     <section className='py-10 md:py-40' id='about'>
-      <div className='hidden md:grid md:grid-cols-2 gap-8 item-center px-4 xl:gap-16 xl:px-16'>
+      <div className='md:grid md:grid-cols-2 gap-8 item-center px-4 xl:gap-16 xl:px-16'>
         <motion.div 
         initial= {{x: -50 , opacity:0}} 
         whileInView={{x: 0 , opacity:1}}
         transition={{duration: 1.8 , type:'spring'}} 
         viewport={{ amount: 0.3, once: false}}
 
-        className='mt-10 max-sm:ml-0 place-self-start'>
+        className='mt-10 place-self-start'>
           <Image src="https://alriswong.github.io/MyPortfolio/image/AboutMePhoto.png" width={350} height={350} alt="AboutMe Pic" className='rounded-4xl'/>
         </motion.div>
         

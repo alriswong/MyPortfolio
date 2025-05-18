@@ -3,7 +3,7 @@ import {React, useState} from 'react';
 import { EyeIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 
-const ProjectCard = ({imgUrl, title, description,technologies, gitUrl, previewUrl}) => {
+const ProjectCard = ({imgUrl, title, description,technologies, previewUrl}) => {
     const [showOverlay, setShowOverlay] = useState(false);
     const handleToggleOverlay = () => setShowOverlay(v => !v);
   return (

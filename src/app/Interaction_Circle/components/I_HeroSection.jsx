@@ -34,7 +34,7 @@ const I_HeroSection = () => {
         </div>
         
         <div className='place-items-center xl:col-span-7 xl:col-start-7 xl:mt-10 2xl:mt-0'>
-          <div className='w-full aspect-[9/16] max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg mx-auto'>
+          <div className='h-fit w-full aspect-[9/16] max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg mx-auto'>
             <motion.iframe 
             initial= {{scale:0.5 , opacity:0}} 
             whileInView={{scale:1 , opacity:1}}
