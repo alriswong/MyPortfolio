@@ -16,7 +16,7 @@ const navbar = () => {
   return (
     <nav className='fixed mx-auto border border-[#33353F] border-l-transparent border-r-transparent top-0 left-0 right-0 z-50 bg-black bg-opacity-100'>
         <div className='flex flex-row justify-start px-4 py-4 md:px-10 xl:px-20 2xl:px-30'>
-            <Link href='/#portfolio' className="flex flex-row items-center text-white gap-3 duration-175 hover:text-2xl focus:text-2xl">
+            <Link href='/#portfolio' className="flex flex-row items-center text-white gap-3 duration-175 hover:text-2xl focus:text-2xl max-2xl:active:text-BTcolorOne">
 
             <motion.svg 
             initial = {{x:-8 , opacity:0.5}}

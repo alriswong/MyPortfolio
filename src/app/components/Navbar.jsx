@@ -84,7 +84,7 @@ const Navbar = () => {
 
         {/* ---------------Mobile Menu---------------- */}
         <div ref={sideMenuRef} className='flex md:hidden flex-col gap-10 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-black transition duration-500'>
-            <div onClick={menuClose} className='absolute right-6 top-6 flex items-center px-3 py-2 border rounded border-subHeadingColor text-subHeadingColor hover:text-white hover:border-white cursor-pointer'>
+            <div onClick={menuClose} className='absolute right-6 top-6 flex items-center px-3 py-2 border rounded border-subHeadingColor text-subHeadingColor hover:text-white hover:border-white max-2xl:active:text-BTcolorOne max-2xl:active:border-BTcolorOne cursor-pointer'>
                 <XMarkIcon className="h-5 w-5" />
             </div>
             

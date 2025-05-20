@@ -36,7 +36,7 @@ const EmailSection = () => {
 
 
   return (
-    <section id='contact' className='relative my-10 pt-20 pb-30 md:pt-45 xl:pt-35 2xl:pt-40'>
+    <section id='contact' className='relative my-30 md:pt-45 xl:pt-35 2xl:pt-40'>
         <div className='grid md:grid-cols-2 py-24 gap-12 sm:gap-8'>
             {/* ----------------- Circle ----------------- */}
         <div className='bg-radial-[at_50%_75%] from-BTcolorTwo/50 to-BTcolorOne/50 to-90% rounded-full h-80 w-80 z-5 blur-lg absolute top-9/10 -left-45 transform -translate-x-1/2 -translate-1/2 max-sm:-left-35 max-sm:h-50'></div>
