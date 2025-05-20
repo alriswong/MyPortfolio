@@ -17,7 +17,7 @@ const ProjectCard = ({imgUrl, title, description,technologies, previewUrl}) => {
                     group-hover:flex group-hover:bg-[#181818]/80`
                 }>
                     <Link href={previewUrl} className='relative h-14 w-14 border-2 rounded-full border-[#ADB7BE] hover:white group/link'>
-                        <EyeIcon className='w-10 h-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white max-2xl:active:text-BTcolorOne'/>
+                        <EyeIcon className='w-10 h-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white max-2xl:group-active:text-BTcolorOne'/>
                         
                     </Link>
                 </div>
