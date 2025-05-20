@@ -75,7 +75,7 @@ const Navbar = () => {
             </div>
 
             <div className='mobile-menu md:hidden'>
-                <div onClick={menuOpen} className='flex items-center px-3 py-2 border rounded border-subHeadingColor text-subHeadingColor hover:text-white hover:border-white cursor-pointer'>
+                <div onClick={menuOpen} className='flex items-center px-3 py-2 border rounded border-subHeadingColor text-subHeadingColor hover:text-white focus:text-white hover:border-white max-2xl:active:text-BTcolorOne max-2xl:active:border-BTcolorOne cursor-pointer'>
                     <Bars3Icon className="h-5 w-5" />
                 </div>     
             </div>            
