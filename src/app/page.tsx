@@ -1,5 +1,5 @@
 "use client";
-import Head from 'next/head';
+
 import HeroSection from"./components/HeroSection";
 import ScrollIcon from "./components/ScrollIcon"
 import Navbar from "./components/Navbar";
