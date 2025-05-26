@@ -67,14 +67,34 @@ const projectData = [
         previewUrl:"https://codepen.io/Alris-Wong/pen/zxxXYPj",
     },
     {
-        id: 6,
-        title: "Hot Spring Dashboard",
-        description: "Frontend Developer",
-        technologies: ["Html","CSS","JavaScript","Python","Mapbox","Apache ECarts"], 
-        image: "https://alriswong.github.io/MyPortfolio/image/Project/HotSpring_Dashboard.png",
-        tag: ["All","Website"],
+        id: 8,
+        title: "暑假吃太多的Sally",
+        description: "3D Artist",
+        technologies: ["3Ds Max"], 
+        image: "/image/Project/SallyEatTooMuchInSummerCover.png",
+        tag: ["All","3D"],
         
-        previewUrl:"https://www.youtube.com/watch?v=ZMHLLIs0lLw",
+        previewUrl:"https://youtu.be/pnWhW4wN0DU",
+    },
+    {
+        id: 9,
+        title: "What a strange dream",
+        description: "3D Artist",
+        technologies: ["3Ds Max"], 
+        image: "/image/Project/WhatAStrangeDreamCover.png",
+        tag: ["All","3D"],
+        
+        previewUrl:"https://youtu.be/99jPPUDqnk4",
+    },
+    {
+        id: 10,
+        title: "Zombie",
+        description: "3D Artist",
+        technologies: ["Blender"], 
+        image: "/image/Project/ZombiePic.png",
+        tag: ["All","3D"],
+        
+        previewUrl:"/image/Project/ZombiePic.png",
     },
 ];
 
@@ -111,6 +131,7 @@ const ProjectSection = () => {
                 <ProjectTag onClick={handleTagChange} name="All" isSelected={tag === "All"}/>
                 <ProjectTag onClick={handleTagChange} name="Games" isSelected={tag === "Games"}/>
                 <ProjectTag onClick={handleTagChange} name="Website" isSelected={tag === "Website"}/>
+                <ProjectTag onClick={handleTagChange} name="3D" isSelected={tag === "3D"}/>
             </div>
 
             <ul ref={ref} className='grid md:grid-cols-2 2xl:grid-cols-3 gap-8 md:gap-12'>
