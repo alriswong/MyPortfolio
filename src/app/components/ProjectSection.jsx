@@ -71,7 +71,7 @@ const projectData = [
         title: "暑假吃太多的Sally",
         description: "3D Artist",
         technologies: ["3Ds Max"], 
-        image: "/image/Project/SallyEatTooMuchInSummerCover.png",
+        image: "https://alriswong.github.io/MyPortfolio/image/Project/SallyEatTooMuchInSummerCover.png",
         tag: ["All","3D"],
         
         previewUrl:"https://youtu.be/pnWhW4wN0DU",
@@ -81,7 +81,7 @@ const projectData = [
         title: "What a strange dream",
         description: "3D Artist",
         technologies: ["3Ds Max"], 
-        image: "/image/Project/WhatAStrangeDreamCover.png",
+        image: "https://alriswong.github.io/MyPortfolio/image/Project/WhatAStrangeDreamCover.png",
         tag: ["All","3D"],
         
         previewUrl:"https://youtu.be/99jPPUDqnk4",
@@ -91,10 +91,10 @@ const projectData = [
         title: "Zombie",
         description: "3D Artist",
         technologies: ["Blender"], 
-        image: "/image/Project/ZombiePic.png",
+        image: "https://alriswong.github.io/MyPortfolio/image/Project/ZombiePic.png",
         tag: ["All","3D"],
         
-        previewUrl:"/image/Project/ZombiePic.png",
+        previewUrl:"https://alriswong.github.io/MyPortfolio/image/Project/ZombiePic.png",
     },
 ];
 
