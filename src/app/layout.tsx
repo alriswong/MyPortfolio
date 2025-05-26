@@ -4,7 +4,8 @@ import './globals.css';
 export const metadata = {
   
   title: 'Alris Wong Portfolio',
-  description: 'Alris Wong - Game Developer, Gameplay Designer, base in Hong Kong and Taiwan',
+  description: 'Alris Wong - Game Developer, Gameplay Designer, based in Hong Kong and Taiwan',
+  
 }
 
 
