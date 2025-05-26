@@ -58,7 +58,7 @@ const Navbar = () => {
   return (
     <nav className='fixed mx-auto border border-[#33353F] border-l-transparent border-r-transparent top-0 left-0 right-0 z-50 bg-black bg-opacity-100'>
         <div className='flex flex-wrap items-center justify-between mx-auto px-5 md:px-15 xl:px-20 py-4 2xl:px-30 lg:py-4'>
-            <Link href={"#top"} className='text-2xl xl:text-5xl text-white font-semibold'>AW</Link>
+            <Link href={"#top"} className='text-2xl xl:text-3xl text-white font-semibold'><h1>ALRIS WONG</h1></Link>
 
             <div id="navbar" className='menu hidden md:flex items-center justify-between'>
                 <div>
