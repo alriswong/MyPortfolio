@@ -5,8 +5,10 @@ export const metadata = {
   
   title: 'Alris Wong Portfolio',
   description: 'Alris Wong - Game Developer, Gameplay Designer, based in Hong Kong and Taiwan',
-  'google-site-verification': 'nR2GWzX_rCIvu6k2q_1ZCexIePS_RiVpeXvGsoZUDaM',
   
+  verification: {
+    google: 'nR2GWzX_rCIvu6k2q_1ZCexIePS_RiVpeXvGsoZUDaM',
+  },
 }
 
 
