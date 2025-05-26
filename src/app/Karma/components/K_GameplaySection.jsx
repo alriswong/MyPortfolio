@@ -68,7 +68,7 @@ const K_GameplaySection = () => {
             viewport={{ amount: 0.3, once: true}}
             
             className='xl:grid xl:grid-cols-12 items-center mx-auto'>
-            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'https://alriswong.github.io/MyPortfolio/image/Project/Underwater_clip.gif'} width={800} height={450} alt='Defence'></Image>
+            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'image/Project/K_Underwater.png'} width={800} height={450} alt='Defence'></Image>
             <p className='col-span-4 col-start-9 text-subHeadingColor text-xl'> 
               I created the entire underwater environment using Unity. 
             I designed a realistic water surface effect using custom shaders built with Shader Graph to simulate light refraction, distortion, and surface movement.
@@ -97,9 +97,35 @@ const K_GameplaySection = () => {
             viewport={{ amount: 0.3, once: true}}
             
             className='xl:grid xl:grid-cols-12 items-center mx-auto'>
+            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'/image/Project/Karma_AnimMural.gif'} width={1663} height={935} alt='Level Design'></Image>
+            <p className='col-span-4 col-start-9 text-subHeadingColor text-xl'> 
+              Created dynamic wall murals with animated elements to enhance environmental storytelling.
+            </p>
+          </motion.div>
+
+          <motion.div 
+            initial= {{x:-30 , opacity:0}} 
+            whileInView={{x:0 , opacity:1}}
+            transition={{duration: 1 , type:'spring'}} 
+            viewport={{ amount: 0.3, once: true}}
+            
+            className='xl:grid xl:grid-cols-12 items-center mx-auto'>
             <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'https://alriswong.github.io/MyPortfolio/image/Project/K_Facial_feature_resize.gif'} width={1663} height={935} alt='Level Design'></Image>
             <p className='col-span-4 col-start-9 text-subHeadingColor text-xl'> 
               Facial features can be resized by holding down a button; Releasing the button locks the feature at its current size. After completing facial customization, the modified head can be applied to the character.
+            </p>
+          </motion.div>
+
+          <motion.div 
+            initial= {{x:-30 , opacity:0}} 
+            whileInView={{x:0 , opacity:1}}
+            transition={{duration: 1 , type:'spring'}} 
+            viewport={{ amount: 0.3, once: true}}
+            
+            className='xl:grid xl:grid-cols-12 items-center mx-auto'>
+            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'/image/Project/Karma_Occlusion.gif'} width={1663} height={935} alt='Level Design'></Image>
+            <p className='col-span-4 col-start-9 text-subHeadingColor text-xl'> 
+              Implemented occlusion culling in Unity to optimize performance by minimizing unnecessary rendering, thereby reducing CPU and GPU workload during real-time gameplay.
             </p>
           </motion.div>
         </div>
