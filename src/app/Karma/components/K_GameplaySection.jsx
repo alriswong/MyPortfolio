@@ -68,7 +68,7 @@ const K_GameplaySection = () => {
             viewport={{ amount: 0.3, once: true}}
             
             className='xl:grid xl:grid-cols-12 items-center mx-auto'>
-            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'image/Project/K_Underwater.png'} width={800} height={450} alt='Defence'></Image>
+            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'https://alriswong.github.io/MyPortfolio/image/Project/K_Underwater.png'} width={800} height={450} alt='Defence'></Image>
             <p className='col-span-4 col-start-9 text-subHeadingColor text-xl'> 
               I created the entire underwater environment using Unity. 
             I designed a realistic water surface effect using custom shaders built with Shader Graph to simulate light refraction, distortion, and surface movement.
@@ -97,7 +97,7 @@ const K_GameplaySection = () => {
             viewport={{ amount: 0.3, once: true}}
             
             className='xl:grid xl:grid-cols-12 items-center mx-auto'>
-            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'/image/Project/Karma_AnimMural.gif'} width={1663} height={935} alt='Level Design'></Image>
+            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'https://alriswong.github.io/MyPortfolio/image/Project/Karma_AnimMural.gif'} width={1663} height={935} alt='Level Design'></Image>
             <p className='col-span-4 col-start-9 text-subHeadingColor text-xl'> 
               Created dynamic wall murals with animated elements to enhance environmental storytelling.
             </p>
@@ -123,7 +123,7 @@ const K_GameplaySection = () => {
             viewport={{ amount: 0.3, once: true}}
             
             className='xl:grid xl:grid-cols-12 items-center mx-auto'>
-            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'/image/Project/Karma_Occlusion.gif'} width={1663} height={935} alt='Level Design'></Image>
+            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'https://alriswong.github.io/MyPortfolio/image/Project/Karma_Occlusion.gif'} width={1663} height={935} alt='Level Design'></Image>
             <p className='col-span-4 col-start-9 text-subHeadingColor text-xl'> 
               Implemented occlusion culling in Unity to optimize performance by minimizing unnecessary rendering, thereby reducing CPU and GPU workload during real-time gameplay.
             </p>
