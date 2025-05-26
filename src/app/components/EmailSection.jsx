@@ -80,7 +80,7 @@ const EmailSection = () => {
                 viewport={{ amount: 0.8, once: false}}
                 className='hover:scale-110 hover:transition-all hover:duration-300'
                 >
-                <Link href="https://www.linkedin.com/in/wsw-5226782b3/">
+                <Link href="https://www.linkedin.com/in/alris-wong/">
                     <Image src={LinkedinIcon} alt="LinkedinIcon" width={40} height={40} />
                 </Link>
                 </motion.div>
