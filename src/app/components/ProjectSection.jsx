@@ -70,7 +70,7 @@ const projectData = [
         id: 8,
         title: "暑假吃太多的Sally",
         description: "3D Artist",
-        technologies: ["3Ds Max"], 
+        technologies: ["Autodesk 3ds Max"], 
         image: "https://alriswong.github.io/MyPortfolio/image/Project/SallyEatTooMuchInSummerCover.png",
         tag: ["All","3D"],
         
@@ -80,7 +80,7 @@ const projectData = [
         id: 9,
         title: "What a strange dream",
         description: "3D Artist",
-        technologies: ["3Ds Max"], 
+        technologies: ["Autodesk 3ds Max"], 
         image: "https://alriswong.github.io/MyPortfolio/image/Project/WhatAStrangeDreamCover.png",
         tag: ["All","3D"],
         
