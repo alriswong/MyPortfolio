@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import { motion } from "motion/react"
+import Link from 'next/link'
 
 const K_HeroSection = () => {
   return (
@@ -27,6 +28,17 @@ const K_HeroSection = () => {
             At the beginning of the game, the player awakens to find themselves transformed into an electric eel. 
             To regain their human form, they must undergo a series of divine trials. With each trial completed, a deity restores a part of the player’s original human traits.
           </motion.p>
+
+          <Link href="https://drive.google.com/file/d/1nnffzyrfwG_iznIEqYqDswtaF4SXO-V1/view?usp=sharing">
+            <motion.button 
+            initial= {{scale:0 , opacity: 0}} 
+            whileInView={{scale:1,  opacity: 1}}
+            transition={{duration:0.5, type:'spring', stiffness:70, delay:0.8}}
+            viewport={{ amount: 0.1, once: false}}
+            className="px-4 py-2 w-full sm:w-fit rounded-full mt-4  text-black bg-gradient-to-br  from-BTcolorOne to-BTcolorTwo hover:scale-110 hover:transition-all hover:duration-300 cursor-pointer">
+            Download
+            </motion.button>
+          </Link>
         </div>
 
         <div className='place-content-center xl:col-span-7 xl:col-start-7'>
