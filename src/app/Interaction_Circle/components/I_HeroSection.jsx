@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import { motion } from "motion/react"
+import Link from 'next/link'
 
 const I_HeroSection = () => {
   return (
@@ -13,7 +14,7 @@ const I_HeroSection = () => {
             whileInView={{opacity:1}}
             transition={{duration: 3 , type:'spring'}} 
             viewport={{ amount: 0.3, once: false}}
-            className='my-10'>
+            className='mb-10'>
               <span className='text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-BTcolorOne to-BTcolorTwo'>互動環</span>
           </motion.h1>
 
@@ -31,6 +32,18 @@ const I_HeroSection = () => {
           The gameplay is inspired by the traditional game of hopscotch and requires two players to work together to complete it.
                       
           </motion.p>
+
+          <Link href="https://joypad-jelly.itch.io/interaction-circle">
+            <motion.button 
+            initial= {{scale:0 , opacity: 0}} 
+            whileInView={{scale:1,  opacity: 1}}
+            transition={{duration:0.5, type:'spring', stiffness:70, delay:0.8}}
+            viewport={{ amount: 0.1, once: false}}
+            className="px-4 py-2 w-full sm:w-fit rounded-full mt-4  text-black bg-gradient-to-br  from-BTcolorOne to-BTcolorTwo hover:scale-110 hover:transition-all hover:duration-300 cursor-pointer">
+            Play Demo
+            </motion.button>
+          </Link>
+
         </div>
         
         <div className='place-content-center xl:col-span-7 xl:col-start-7'>
