@@ -14,7 +14,7 @@ const I_HeroSection = () => {
             whileInView={{opacity:1}}
             transition={{duration: 3 , type:'spring'}} 
             viewport={{ amount: 0.3, once: false}}
-            className='mb-10'>
+            className='my-30 2xl:my-0 2xl:mb-10'>
               <span className='text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-BTcolorOne to-BTcolorTwo'>互動環</span>
           </motion.h1>
 
