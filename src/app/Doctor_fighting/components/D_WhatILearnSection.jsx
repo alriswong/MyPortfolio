@@ -3,6 +3,36 @@ import React from 'react'
 import Image from 'next/image'
 import { motion } from "motion/react"
 import { PencilSquareIcon } from '@heroicons/react/24/solid'
+import { CopyBlock, dracula,a11yDark } from 'react-code-blocks'
+
+const codeboxJump = [
+    "//All the information for a detected hand. It refers to a single hand.",
+    "HandInfo handInformation = ManomotionManager.Instance.Hand_infos[0].hand_info;",
+    "//All the gesture information for this hand.",
+    "GestureInfo gestureInformation = handInformation.gesture_info;",
+    "//The trigger gesture that is detected in this frame.",
+    "ManoGestureTrigger currentDetectedTriggerGesture = gestureInformation.mano_gesture_trigger;",
+    "",
+    "if (currentDetectedTriggerGesture == ManoGestureTrigger.GRAB_GESTURE)",
+    "{",
+    " Jump(); // Call the Jump function when the grab gesture is detected",
+    "}",
+];
+
+const codeboxAttack = [
+    "//All the information for a detected hand. It refers to a single hand.",
+    "HandInfo handInformation = ManomotionManager.Instance.Hand_infos[0].hand_info;",
+    "//All the gesture information for this hand.",
+    "GestureInfo gestureInformation = handInformation.gesture_info;",
+    "//The trigger gesture that is detected in this frame.",
+    "ManoGestureTrigger currentDetectedTriggerGesture = gestureInformation.mano_gesture_trigger;",
+    "",
+    "if (currentDetectedTriggerGesture == ManoGestureTrigger.PICK)",
+    "{",
+    " Attack(); // Call the Jump function when the grab gesture is detected",
+    "}",
+]
+
 
 const M_GameplaySection = () => {
   return (
@@ -61,10 +91,19 @@ const M_GameplaySection = () => {
                 If the gesture is recognized accurately, an attack action is triggered in the game.
                 </p>
             </motion.div>
-
             
-
-            
+            {/* <div className='md:col-span-12 my-5'>
+                <h1 className='bg-emerald-950 text-2xl text-white p-2'>CODE SNIPPET - Attack with hand gesture</h1>
+                <CopyBlock
+                
+                text={codeboxAttack.join('\n')}
+                language='csharp'
+                showLineNumbers={true}
+                wrapLines
+                theme={a11yDark}
+                
+                />
+            </div> */}
         </div>
 
         <div className='grid grid-cols-1 max-sm:gap-5 md:grid-cols-12 place-content-center items-center my-12 md:px-15 xl:px-25 2xl:px-50'>
@@ -90,6 +129,18 @@ const M_GameplaySection = () => {
                 When a valid gesture is recognized, it triggers a jump action in the game.
                 </p>
             </motion.div>
+
+            {/* <div className='md:col-span-12 my-5'>
+                <h1 className='bg-emerald-950 text-2xl text-white p-2'>CODE SNIPPET - Jump with hand gesture</h1>
+                <CopyBlock
+                
+                text={codeboxJump.join('\n')}
+                language='csharp'
+                showLineNumbers={true}
+                wrapLines
+                theme={a11yDark}
+                />
+            </div> */}
         </div>
 
         <div className='mt-30'>

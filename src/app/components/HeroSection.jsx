@@ -17,7 +17,7 @@ const HeroSection = () => {
             viewport={{ amount: 0.1, once: false}}
             className="basis-2/3 place-self-center text-center sm:text-left justify-self-start max-sm:mt-55">
                 <h1 className="text-white mb-10 text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-BTcolorOne to-BTcolorTwo">Hello, I'm{""}</span> 
+                    <span className="text-transparent font-heading bg-clip-text bg-gradient-to-r from-BTcolorOne to-BTcolorTwo">Hello, I'm{""}</span> 
                     <br/>
                     <TypeAnimation
                         sequence={[
@@ -57,15 +57,17 @@ const HeroSection = () => {
                         </motion.button>
                     </Link>
                     
+                    <Link href="https://drive.google.com/file/d/1AT8ZPo3hTRWc9Lp8xxl6g7gaHIK81EYj/view?usp=sharing">
+                        <motion.button 
+                        initial= {{scale:0 , opacity: 0}} 
+                        whileInView={{scale:1 ,  opacity: 1}}
+                        transition={{duration:0.5, type:'spring', stiffness:70, delay:1.2}}
+                        viewport={{ amount: 0.1, once: false}}
+                        className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br hover:scale-110 hover:transition-all hover:duration-300 from-BTcolorOne to-BTcolorTwo text-white mt-3 cursor-pointer">
+                            <span className="block bg-black rounded-full px-6 py-2">Download CV</span>
+                        </motion.button>
+                    </Link>
                     
-                    <motion.button 
-                    initial= {{scale:0 , opacity: 0}} 
-                    whileInView={{scale:1 ,  opacity: 1}}
-                    transition={{duration:0.5, type:'spring', stiffness:70, delay:1.2}}
-                    viewport={{ amount: 0.1, once: false}}
-                    className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br hover:scale-110 hover:transition-all hover:duration-300 from-BTcolorOne to-BTcolorTwo text-white mt-3 cursor-pointer">
-                        <span className="block bg-black rounded-full px-6 py-2">Download CV</span>
-                    </motion.button>
                 </div>
             </motion.div>
             

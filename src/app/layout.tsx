@@ -1,5 +1,5 @@
 import './globals.css';
-
+//import {Geist} from "next/font/google";
 
 export const metadata = {
   
@@ -11,6 +11,15 @@ export const metadata = {
   },
 }
 
+
+
+// export const geist = Geist({
+//   subsets: ['latin'],
+//   weight: ['400', '700'],
+//   variable: '--font-geist',
+//   style: 'normal',
+//   display: 'swap',
+// })
 
 
 export default function RootLayout({

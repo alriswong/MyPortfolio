@@ -2,6 +2,30 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from "motion/react"
+import { CopyBlock, dracula,a11yDark } from 'react-code-blocks'
+
+const codeboxJumping = [
+    "IEnumerator jump()",
+    "{",
+    "float elapsedTime = 0f;",
+        
+    "Vector2 startPosition = transform.position;",
+    "moveToTarget = new Vector2(transform.position.x - targetPosition.x , transform.position.y + targetPosition.y);",
+    "while (elapsedTime < 1f) // Move for 1 second (or adjust as needed)",
+    "{",
+    "// Lerp (Linear Interpolation) between the starting and target positions",
+    "transform.position = Vector2.Lerp(startPosition, moveToTarget, elapsedTime / duration);",
+    "elapsedTime += Time.deltaTime;",
+    "// Adjust speed",
+
+    "yield return null; // Wait for the next frame",
+        
+    "}",
+    "isJumping= false;",
+    "jumpAnimation.SetBool(\"Jump\", false);",
+    
+    "}",
+]
 
 const I_GameplaySection = () => {
   return (
@@ -73,6 +97,18 @@ const I_GameplaySection = () => {
                     <p className='col-span-4 col-start-9 text-subHeadingColor text-xl mb-5'>Once fully charged, the other player swings the controller to execute the jump.</p>
                     
                 </motion.div>
+
+                {/* <div className='xl:grid xl:col-span-12 my-5'>
+                    <h1 className='bg-emerald-950 text-2xl text-white p-2'>CODE SNIPPET - Jumping with hand gesture</h1>
+                    <CopyBlock
+                    
+                    text={codeboxJumping.join('\n')}
+                    language='csharp'
+                    showLineNumbers={true}
+                    wrapLines
+                    theme={a11yDark}
+                    />
+                </div> */}
 
                 <motion.div 
                 initial= {{x:-30 , opacity:0}} 
