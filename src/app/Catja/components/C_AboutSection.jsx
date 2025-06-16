@@ -20,7 +20,7 @@ const projectDetails = [
   {
     icon: <CalendarIcon className="h-5 w-5" />,
     label: 'Duration',
-    value: '6 Weeks',
+    value: '6 Weeks(2022-12 to 2023-01)',
   },
   {
     icon: <ClipboardDocumentIcon className="h-5 w-5" />,

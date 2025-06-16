@@ -8,7 +8,7 @@ import { motion , useInView} from "motion/react"
 const projectData = [
     {
         id: 4,
-        title: "Karma",
+        title: "Karma (2024)",
         description: "Team Leader, Game Programmer",
         technologies: ["UnityURP","C#","XR Interaction Toolkit","SteamVR"], 
         image: "https://alriswong.github.io/MyPortfolio/image/Project/Karma_website.jpg",
@@ -18,7 +18,7 @@ const projectData = [
     },
     {
         id: 3,
-        title: "Catja",
+        title: "Catja (2023)",
         description: "Game Programmer",
         technologies: ["Unity","C#","XR Interaction Toolkit"], 
         image: "https://alriswong.github.io/MyPortfolio/image/Project/Catja_Cover.png",
@@ -28,7 +28,7 @@ const projectData = [
     },
     {
         id: 2,
-        title: "互動環",
+        title: "互動環 (2022)",
         description: "Game Programmer, Gameplay Design, Controller Design & Programming",
         technologies: ["Unity","C#","Playfab", "Arduino"], 
         image: "https://alriswong.github.io/MyPortfolio/image/Project/InteractionCircle_GameCover.png",
@@ -38,7 +38,7 @@ const projectData = [
     },
     {
         id: 1,
-        title: "醫護Fighting!",
+        title: "醫護Fighting! (2021)",
         description: "Game Programmer",
         technologies: ["Unity","C#","AR Foundation", "Manomotion SDK", "Android"], 
         image: "https://alriswong.github.io/MyPortfolio/image/Project/醫護fighting_poster.png",
@@ -48,7 +48,7 @@ const projectData = [
     },
     {
         id: 7,
-        title: "My Portfolio Website",
+        title: "My Portfolio Website (2025)",
         description: "Frontend Developer",
         technologies: ["Next.js","TailwindCSS","Farmer Motion","EmailJS","Shadcn/ui"], 
         image: "https://alriswong.github.io/MyPortfolio/image/Project/Alris_My_portfolio.png",
@@ -58,7 +58,7 @@ const projectData = [
     },
     {
         id: 5,
-        title: "Square Pattern Wallpaper Creator",
+        title: "Square Pattern Wallpaper Creator (2023)",
         description: "Web Developer",
         technologies: ["Html","CSS","p5.js"], 
         image: "https://alriswong.github.io/MyPortfolio/image/Project/SquarePatternWallpaperCreator2.png",
@@ -68,7 +68,7 @@ const projectData = [
     },
     {
         id: 8,
-        title: "暑假吃太多的Sally",
+        title: "暑假吃太多的Sally (2022)",
         description: "3D Artist",
         technologies: ["Autodesk 3ds Max"], 
         image: "https://alriswong.github.io/MyPortfolio/image/Project/SallyEatTooMuchInSummerCover.png",
@@ -78,7 +78,7 @@ const projectData = [
     },
     {
         id: 9,
-        title: "What a strange dream",
+        title: "What a strange dream (2022)",
         description: "3D Artist",
         technologies: ["Autodesk 3ds Max"], 
         image: "https://alriswong.github.io/MyPortfolio/image/Project/WhatAStrangeDreamCover.png",
@@ -88,7 +88,7 @@ const projectData = [
     },
     {
         id: 10,
-        title: "Zombie",
+        title: "Zombie (2023)",
         description: "3D Artist",
         technologies: ["Blender"], 
         image: "https://alriswong.github.io/MyPortfolio/image/Project/ZombiePic.png",
