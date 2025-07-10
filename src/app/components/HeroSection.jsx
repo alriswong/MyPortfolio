@@ -17,20 +17,20 @@ const HeroSection = () => {
             viewport={{ amount: 0.1, once: false}}
             className="basis-2/3 place-self-center text-center sm:text-left justify-self-start max-sm:mt-55">
                 <h1 className="text-white mb-10 text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold">
-                    <span className="text-transparent font-heading bg-clip-text bg-gradient-to-r from-BTcolorOne to-BTcolorTwo">Hello, I'm{""}</span> 
+                    <span className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-transparent font-heading bg-clip-text bg-gradient-to-r from-BTcolorOne to-BTcolorTwo">Hello, I'm{""}</span> 
                     <br/>
                     <TypeAnimation
                         sequence={[
                             // Same substring at the start will only be typed out once, initially
                             'Alris',
-                            1000, // wait 1s before replacing "Mice" with "Hamsters"
+                            800, // wait 1s before replacing "Mice" with "Hamsters"
                             'Game Programmer',
-                            1000,
-                            'Front-end Developer',
-                            1000,
+                            800,
+                            'Gameplay Designer',
+                            800,
                         ]}
                         wrapper="span"
-                        speed={10}
+                        speed={50}
                         repeat={Infinity}
                     />
                 </h1>
@@ -41,11 +41,11 @@ const HeroSection = () => {
                 transition={{duration: 1, delay:0.3}} 
                 viewport={{ amount: 0.1, once: false}}
                 className="text-contentColor text-base md:text-lg mb-6 xl:text-2xl"> 
-                    Specialize in creating immersive VR games and building responsive websites. 
-                    Passionate about crafting engaging digital experiences that merge creativity with functionality through innovative coding and thoughtful user-centered design.
+                    Passionate about Gameplay Design and Programming, with hands-on experience developing games across PC, Mobile, and VR platforms. 
+                    I enjoy creating engaging and intuitive gameplay experiences, combining strong technical skills with creative problem-solving. 
                 </motion.p>
 
-                <div>
+                {/* <div>
                     <Link href="#portfolio">
                         <motion.button 
                         initial= {{scale:0 , opacity: 0}} 
@@ -68,7 +68,7 @@ const HeroSection = () => {
                         </motion.button>
                     </Link>
                     
-                </div>
+                </div> */}
             </motion.div>
             
 

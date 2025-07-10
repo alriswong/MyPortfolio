@@ -1,9 +1,9 @@
 'use client'
-import React, {useRef, useTransition, useState} from 'react';
+import React, {useTransition, useState} from 'react';
 import Image from 'next/image';
 import TabButton from './TabButton';
 import { motion } from "motion/react"
-import { Scale } from 'lucide-react';
+
 
 const TAB_DATA = [
   {
@@ -32,6 +32,7 @@ const TAB_DATA = [
         <li>Autodesk 3D Max</li>
         <li>Photoshop</li>
         <li>After Effect</li>
+        <li>CapCut</li>
       </ul>
     )
   },
@@ -57,8 +58,6 @@ const TAB_DATA = [
   
 ]
 
-
-
 const AboutSection = () => {
   const[tab, setTab] = useState('languages');
   const[isPending, startTransition] = useTransition();
@@ -81,67 +80,76 @@ const AboutSection = () => {
   };
 
   return ( 
-    <section id='about' className='my-10 pt-10 md:pt-25 xl:pt-55 2xl:pt-45'>
-      <div className='hidden md:grid md:grid-cols-2 gap-8 item-center px-4 xl:gap-16 xl:px-16'>
+    <section id='about' className='py-10 2xl:pt-30'>
+      <div className='max-2xl:hidden grid grid-cols-6 item-center px-4 '>
         <motion.div 
-        initial= {{x: -50 , opacity:0}} 
-        whileInView={{x: 0 , opacity:1}}
-        transition={{duration: 1.8 , type:'spring'}} 
-        viewport={{ amount: 0.3, once: false}}
+          initial= {{x: -50 , opacity:0}} 
+          whileInView={{x: 0 , opacity:1}}
+          transition={{duration: 1.8 , type:'spring'}} 
+          viewport={{ amount: 0.3, once: false}}
 
-        className='mt-10 place-self-start'>
-          <Image src="https://alriswong.github.io/MyPortfolio/image/AboutMePhoto.png" width={350} height={350} alt="AboutMe Pic" className='rounded-4xl'/>
+          className='col-span-2 mt-20 place-items-center '>
+            <Image className='' src="/image/MyProfilePic.png" width={350} height={350} alt="AboutMe Pic"/>
         </motion.div>
         
 
-        <motion.div 
-        initial= {{x: 50 , opacity:0}} 
-        whileInView={{x: 0 , opacity:1}}
-        transition={{duration: 1.8 , type:'spring'}} 
-        viewport={{ amount: 0.3, once: false}}
+        <div className='col-span-4'>
+          <motion.div 
+            initial= {{x: 50 , opacity:0}} 
+            whileInView={{x: 0 , opacity:1}}
+            transition={{duration: 1.8 , type:'spring'}} 
+            viewport={{ amount: 0.3, once: false}}
 
-        className='mt-4 md:mt-0 text-left flex flex-col h-full'>
-          <h2 className='text-4xl font-extrabold  mb-4'><span className='text-transparent bg-clip-text bg-linear-to-r  from-BTcolorOne to-BTcolorTwo'>About Me</span></h2>
-          <p className='text-white test-base lg:text-lg'>I hold a Bachelor’s degree in Interaction Design and an Associate degree in Psychology, combining creative design thinking with a deep understanding of user behavior.
-          I specialize in developing immersive VR games using Unity(C#) and XR Interaction Toolkit. I’m driven by the challenge of crafting innovative, engaging, and meaningful game experiences. 
-          <br/>
-          In addition to game development, I also build responsive, 
-          functional websites using Next.js and three.js — blending technical skill with playful design to bring digital ideas to life across platforms.
-          </p>
+            className='flex flex-col mt-0 text-left'>
+              <h2 className='text-4xl font-extrabold mb-4'><span className='text-transparent bg-clip-text bg-linear-to-r  from-BTcolorOne to-BTcolorTwo'>About Me</span></h2>
+              <p className='text-contentColor text-lg'>I hold a Bachelor’s degree in Interaction Design and an Associate degree in Psychology, 
+                combining creative design thinking with a deep understanding of user behavior.
+                I’m driven by the challenge of crafting innovative, engaging, and meaningful game experiences. <br />
+              <br/>
+              During my university studies, I gained hands-on experience in game development through my academic projects, including game design, programming, UI/UX design, 3D modeling, and animation. 
+              These projects not only deepened my understanding of gameplay systems and user interaction but also significantly strengthened my programming skills. Through building prototypes, 
+              implementing mechanics in Unity with C#, and solving real-time gameplay issues, I developed a strong ability to write clean, 
+              efficient code and to approach technical challenges with critical thinking and problem-solving strategies. <br />
+              <br />
+              During my internship as a game tester, I gained valuable insights into improving gameplay experiences through hands-on testing. By identifying issues such as overpowered bosses or unintuitive mechanics, 
+              I learned how to provide constructive feedback to enhance game balance and player learning curves. I also learned how to identify and improve game performance, gaining practical experience in optimization techniques.
+              </p>
 
-          <div className='flex flex-row justify-start mt-8'>
-            <TabButton selectTab={() => handleTabChange('languages')} 
-              active={tab === 'languages'}>Languages
-            </TabButton>
+              <div className='flex flex-row justify-start mt-8'>
+                <TabButton selectTab={() => handleTabChange('languages')} 
+                  active={tab === 'languages'}>Languages
+                </TabButton>
 
-            <TabButton selectTab={() => handleTabChange('engines')} 
-              active={tab === 'engines'}>Engines & Software
-            </TabButton>
+                <TabButton selectTab={() => handleTabChange('engines')} 
+                  active={tab === 'engines'}>Engines & Software
+                </TabButton>
 
-            <TabButton selectTab={() => handleTabChange('frameworks')}
-              active={tab === 'frameworks'}>Frameworks 
-            </TabButton> 
+                <TabButton selectTab={() => handleTabChange('frameworks')}
+                  active={tab === 'frameworks'}>Frameworks 
+                </TabButton> 
 
-            
+                
+              </div>
+
+              <div className='text-white mt-8'>{TAB_DATA.find((t) => t.id === tab).content}</div>
+            </motion.div>
           </div>
-
-          <div className='text-white mt-8'>{TAB_DATA.find((t) => t.id === tab).content}</div>
-        </motion.div>
-      </div>
+        </div>
+        
 
 
       {/* Mobile Size----------------------------------------------------------------------------------------------------------------------- */}
 
-      <div className='md:hidden'>
+      <div className='2xl:hidden'>
         <motion.div 
-        initial= "hidden" 
-        whileInView="visible"
-        variants={aboutmeVariants}
-        transition={{duration: 1.8 , type:'spring'}} 
-        viewport={{ amount: 0.3, once: false}}
+          initial= "hidden" 
+          whileInView="visible"
+          variants={aboutmeVariants}
+          transition={{duration: 1.8 , type:'spring'}} 
+          viewport={{ amount: 0.3, once: false}}
 
-        className='mt-10 flex flex-row justify-center'>
-          <Image src="https://alriswong.github.io/MyPortfolio/image/AboutMePhoto.png" width={300} height={300} alt="AboutMe Pic" className='rounded-4xl '/>
+          className='my-10 md:mt-10 flex justify-center'>
+            <Image src="/image/MyProfilePic.png" width={250} height={250} alt="AboutMe Pic" className='w-60'/>
         </motion.div>
         
 
@@ -150,34 +158,40 @@ const AboutSection = () => {
         whileInView="visible"
         variants={aboutmeVariants}
         transition={{duration: 1.8 , type:'spring'}} 
-        viewport={{ amount: 0.3, once: false}}
+        viewport={{ amount: 0.1, once: false}}
 
-        className='mt-4 md:mt-0 text-left flex flex-col h-full'>
-          <h2 className='text-4xl font-extrabold  mb-4'><span className='text-transparent bg-clip-text bg-linear-to-r  from-BTcolorOne to-BTcolorTwo'>About Me</span></h2>
-          <p className='text-white test-base lg:text-lg'>I hold a Bachelor’s degree in Interaction Design and an Associate degree in Psychology, combining creative design thinking with a deep understanding of user behavior.
-          I specialize in developing immersive VR games using Unity(C#) and XR Interaction Toolkit. I’m driven by the challenge of crafting innovative, engaging, and meaningful game experiences. 
-          <br/>
-          In addition to game development, I also build responsive, 
-          functional websites using Next.js and three.js — blending technical skill with playful design to bring digital ideas to life across platforms.
-          </p>
+        className='flex flex-col mt-4 md:mt-0 text-left'>
+          <h2 className='text-4xl font-extrabold text-center mb-4'><span className='text-transparent bg-clip-text bg-linear-to-r  from-BTcolorOne to-BTcolorTwo'>About Me</span></h2>
+          <p className='text-contentColor text-center md:text-lg'>I hold a Bachelor’s degree in Interaction Design and an Associate degree in Psychology, 
+                combining creative design thinking with a deep understanding of user behavior.
+                I’m driven by the challenge of crafting innovative, engaging, and meaningful game experiences. <br />
+              <br/>
+              During my university studies, I gained hands-on experience in game development through my academic projects, including game design, programming, UI/UX design, 3D modeling, and animation. 
+              These projects not only deepened my understanding of gameplay systems and user interaction but also significantly strengthened my programming skills. Through building prototypes, 
+              implementing mechanics in Unity with C#, and solving real-time gameplay issues, I developed a strong ability to write clean, 
+              efficient code and to approach technical challenges with critical thinking and problem-solving strategies. <br />
+              <br />
+              During my internship as a game tester, I gained valuable insights into improving gameplay experiences through hands-on testing. By identifying issues such as overpowered bosses or unintuitive mechanics, 
+              I learned how to provide constructive feedback to enhance game balance and player learning curves. I also learned how to identify and improve game performance, gaining practical experience in optimization techniques.
+              </p>
 
-          <div className='flex flex-row justify-start mt-8'>
-            <TabButton selectTab={() => handleTabChange('languages')} 
-              active={tab === 'languages'}>Languages
-            </TabButton>
+          <div className='flex flex-col mx-auto'>
+            <div className='flex flex-row justify-center mt-8'>
+              <TabButton selectTab={() => handleTabChange('languages')} 
+                active={tab === 'languages'}>Languages
+              </TabButton>
 
-            <TabButton selectTab={() => handleTabChange('engines')} 
-              active={tab === 'engines'}>Engines & Software
-            </TabButton>
+              <TabButton selectTab={() => handleTabChange('engines')} 
+                active={tab === 'engines'}>Engines & Software
+              </TabButton>
 
-            <TabButton selectTab={() => handleTabChange('frameworks')}
-              active={tab === 'frameworks'}>Frameworks 
-            </TabButton> 
+              <TabButton selectTab={() => handleTabChange('frameworks')}
+                active={tab === 'frameworks'}>Frameworks 
+              </TabButton> 
+            </div>
 
-            
+            <div className='text-white mt-8'>{TAB_DATA.find((t) => t.id === tab).content}</div>
           </div>
-
-          <div className='text-white mt-8'>{TAB_DATA.find((t) => t.id === tab).content}</div>
         </motion.div>
       </div>
     </section>

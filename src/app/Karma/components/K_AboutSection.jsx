@@ -42,15 +42,15 @@ const projectDetails = [
 const K_AboutSection = () => {
   return (
     <section className='my-20 md:my-40 2xl:mb-40 2xl:my-0'>
-      <div className='mb-15'>
+      <div className=''>
         <motion.h1 
           initial= {{scale:0 , opacity:0}} 
           whileInView={{scale:1 , opacity:1}}
           transition={{duration: 1 , type:'spring'}} 
           viewport={{ amount: 0.3, once: false}}
   
-          className='mb-5 text-center'>
-            <span className='text-transparent text-4xl md:text-5xl font-extrabold bg-clip-text bg-gradient-to-r from-BTcolorOne to-BTcolorTwo'>Project Info</span>
+          className='text-center'>
+            <span className='text-transparent text-3xl md:text-4xl xl:text-5xl font-extrabold bg-clip-text bg-gradient-to-r from-BTcolorOne to-BTcolorTwo'>Project Info</span>
         </motion.h1>
         
       </div>
@@ -61,7 +61,7 @@ const K_AboutSection = () => {
         transition={{duration: 1 , type:'spring', delay:0.3}} 
         viewport={{ amount: 0.1, once: true}}
   
-        className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 my-10 md:my-15">
           {projectDetails.map((detail, index) => (
             <div
               key={index}
@@ -76,7 +76,7 @@ const K_AboutSection = () => {
           ))}
       </motion.div>
 
-      <div className='grid grid-cols-1 gap-10 xl:gap-0 xl:grid-cols-12 items-center my-10 mx-5'>
+      <div className='grid grid-cols-1 gap-10 xl:gap-0 xl:grid-cols-12 2xl:items-center my-10 mx-5'>
         <motion.div 
         initial= {{x:-30 , opacity:0}} 
         whileInView={{x:0 , opacity:1}}
@@ -94,10 +94,15 @@ const K_AboutSection = () => {
           transition={{duration: 1 , type:'spring', delay:0.5}} 
           viewport={{ amount: 0.3, once: true}}
                     
-          className='xl:col-span-6 xl:col-start-8'>
+          className='xl:col-span-6 xl:col-start-8 md:text-xl'>
               <h2 className='text-white font-bold text-2xl pb-3'>Contributions:</h2>
-              <p className='text-subHeadingColor text-xl'>In this project, I served as the team leader, responsible for both game programming and technical art. 
-                The game was developed over three semesters, with approximately one semester dedicated to conceptualizing the game content and the remaining time focused on production.
+              <p className='text-neutral-500 text-xl'> 
+                <span className='font-bold text-subHeadingColor'>Team Leader </span> - Coordinated the team, managed project timelines, and ensured effective communication among team members.<br/>
+                <br />
+                <span className='font-bold text-subHeadingColor'>Gameplay Design</span> - Designed and implemented core gameplay mechanics, including the electric eel's movement and interaction with the environment.<br/>
+                <br />
+                <span className='font-bold text-subHeadingColor'>Programming</span> - Developed the game using Unity and C#, focusing on XR Interaction Toolkit for VR functionality. 
+                Implementing key systems such as gesture-based controls, scoring logic, and UI functionality.<br/>
               </p>
         </motion.div>
 

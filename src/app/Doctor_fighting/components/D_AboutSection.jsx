@@ -10,7 +10,7 @@ const projectDetails = [
   {
     icon: <UserIcon className="h-5 w-5" />,
     label: 'Role',
-    value: 'Programmer',
+    value: 'Game Programmer',
   },
   {
     icon: <UserGroupIcon className="h-5 w-5" />,
@@ -51,7 +51,7 @@ const M_DescriptionSection = () => {
         viewport={{ amount: 0.3, once: false}}
 
         className='mx-auto text-center'>
-          <span className='text-transparent text-4xl md:text-5xl font-extrabold bg-clip-text bg-gradient-to-r from-BTcolorOne to-BTcolorTwo'>Project Info</span>
+          <span className='text-transparent text-3xl md:text-4xl xl:text-5xl font-extrabold bg-clip-text bg-gradient-to-r from-BTcolorOne to-BTcolorTwo'>Project Info</span>
         </motion.h1>
       </div>
 
@@ -95,13 +95,12 @@ const M_DescriptionSection = () => {
 
         className='md:col-span-6 md:col-start-7 place-content-center'>
           <h2 className='text-white font-bold text-2xl'>Contributions:</h2>
-          <p className='text-subHeadingColor text-xl md:pr-10'>This is the first game I have developed, where I served as the sole game programmer on the team. 
-            <br /><br />
-            The game was designed to be controlled through hand gestures to minimize physical contact between players, which is particularly relevant in the context of large interactive display in public. 
-            <br /><br />
-            To achieve this, I spent significant time working with the ManoMotion SDK, writing code to enable real-time gesture recognition via the camera and mapping those inputs to in-game character actions.
-            
-          </p>
+          
+          <p className='text-neutral-500 text-xl mt-5'> 
+                
+                <span className='font-bold text-subHeadingColor'>Programming</span> - Responsible for the entire game programming, including hand gestures, scoring logic, etc.<br/>
+                <br />
+              </p>
         </motion.div>
 
       </div>

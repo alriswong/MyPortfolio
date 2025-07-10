@@ -14,12 +14,12 @@ const C_GameplaySection = () => {
           transition={{duration: 1 , type:'spring'}} 
           viewport={{ amount: 0.3, once: false}}
         
-        className='py-5 text-center'><span className='text-transparent text-4xl md:text-5xl font-extrabold bg-clip-text bg-gradient-to-r from-BTcolorOne to-BTcolorTwo'>What I Learned</span></motion.h1>
+        className='py-5 text-center'><span className='text-transparent text-3xl md:text-4xl xl:text-5xl font-extrabold bg-clip-text bg-gradient-to-r from-BTcolorOne to-BTcolorTwo'>Feature Highlights</span></motion.h1>
         
       </div>
 
       <div className='flex flex-col justify-center my-10'>
-        <motion.div 
+        {/* <motion.div 
           initial= {{y:-30 , opacity:0}} 
           whileInView={{y:0 , opacity:1}}
           transition={{duration: 1 , type:'spring', delay:0.5}} 
@@ -32,19 +32,19 @@ const C_GameplaySection = () => {
               For the first demo showcase, I independently developed the core climbing, attack, and defense mechanics in just over a week.
                 
             </p>
-        </motion.div>
+        </motion.div> */}
 
-        <div className='grid grid-cols-1 gap-10 md:px-15 xl:px-8'>
+        <div className='grid grid-cols-1 2xl:grid-cols-2 gap-10 md:px-15 xl:px-8'>
           <motion.div 
             initial= {{x:-30 , opacity:0}} 
             whileInView={{x:0 , opacity:1}}
             transition={{duration: 1 , type:'spring'}} 
             viewport={{ amount: 0.3, once: true}}
             
-            className='xl:grid xl:grid-cols-12 place-items-center mx-auto'>
-            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'https://alriswong.github.io/MyPortfolio/image/Project/Catja_Climb.gif'} width={800} height={450} alt='Climb'></Image>
-            <p className='col-span-4 col-start-9 text-subHeadingColor text-xl mb-5'> When the VR controller button is pressed, a Fixed Joint is dynamically generated in real time to connect the player’s hand (which has a Rigidbody component) to a climbable object. 
-            This setup enables the character to ascend by simulating realistic physical interactions—mimicking the pulling motion of climbing through Unity’s physics engine.
+            className='flex flex-col place-items-center mx-auto'>
+            <Image className='mb-3 xl:mb-0 w-4xl' src={'https://alriswong.github.io/MyPortfolio/image/Project/Catja_Climb.gif'} width={800} height={450} alt='Climb'></Image>
+            <p className='text-contentColor md:text-xl text-center p-3'> When the VR controller button is pressed, a Fixed Joint is dynamically generated in real time to connect the player’s hand (which has a Rigidbody component) to a climbable object. 
+            
             </p>
           </motion.div>
           
@@ -54,9 +54,9 @@ const C_GameplaySection = () => {
             transition={{duration: 1 , type:'spring'}} 
             viewport={{ amount: 0.3, once: true}}
             
-            className='xl:grid xl:grid-cols-12 place-items-center mx-auto'>
-            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'https://alriswong.github.io/MyPortfolio/image/Project/Catja_Jump.gif'} width={800} height={450} alt='Jump'></Image>
-            <p className='col-span-4 col-start-9 text-subHeadingColor text-xl mb-5'> To replicate the springy and agile movement of a cat, Configurable Joints were applied to the character’s hands, with carefully tuned parameters such as spring force, 
+            className='flex flex-col place-items-center mx-auto'>
+            <Image className='mb-3 xl:mb-0 w-4xl' src={'https://alriswong.github.io/MyPortfolio/image/Project/Catja_Jump.gif'} width={800} height={450} alt='Jump'></Image>
+            <p className='text-contentColor md:text-xl text-center p-3'> To replicate the springy and agile movement of a cat, Configurable Joints were applied to the character’s hands, with carefully tuned parameters such as spring force, 
             damping, and motion constraints to simulate realistic feline-like jumping behavior.
             </p>
           </motion.div>
@@ -67,9 +67,9 @@ const C_GameplaySection = () => {
             transition={{duration: 1 , type:'spring'}} 
             viewport={{ amount: 0.3, once: true}}
             
-            className='xl:grid xl:grid-cols-12 place-items-center mx-auto'>
-            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'https://alriswong.github.io/MyPortfolio/image/Project/Catja_attack.gif'} width={800} height={450} alt='Attack'></Image>
-            <p className='col-span-4 col-start-9 text-subHeadingColor text-xl mb-5'> 
+            className='flex flex-col place-items-center mx-auto'>
+            <Image className='mb-3 xl:mb-0 w-4xl' src={'https://alriswong.github.io/MyPortfolio/image/Project/Catja_attack.gif'} width={800} height={450} alt='Attack'></Image>
+            <p className='text-contentColor md:text-xl text-center p-3'> 
             To generate a shuriken, the player holds the grip button near the chest area, where a collider detects the action and spawns the shuriken. 
             Releasing the button then throws it forward.
             </p>
@@ -81,9 +81,9 @@ const C_GameplaySection = () => {
             transition={{duration: 1 , type:'spring'}} 
             viewport={{ amount: 0.3, once: true}}
             
-            className='xl:grid xl:grid-cols-12 place-items-center mx-auto'>
-            <Image className='col-span-7 mb-5 xl:mb-0 w-4xl xl:w-full' src={'https://alriswong.github.io/MyPortfolio/image/Project/Catja_defence.gif'} width={800} height={450} alt='Defence'></Image>
-            <p className='col-span-4 col-start-9 text-subHeadingColor text-xl mb-5'> 
+            className='flex flex-col place-items-center mx-auto'>
+            <Image className='mb-3 xl:mb-0 w-4xl' src={'https://alriswong.github.io/MyPortfolio/image/Project/Catja_defence.gif'} width={800} height={450} alt='Defence'></Image>
+            <p className='text-contentColor md:text-xl text-center p-3'> 
             Pressing the A or X button activates a protective shield for defense.
             </p>
           </motion.div>
@@ -94,9 +94,9 @@ const C_GameplaySection = () => {
             transition={{duration: 1 , type:'spring'}} 
             viewport={{ amount: 0.3, once: true}}
             
-            className='xl:grid xl:grid-cols-12 place-items-center mx-auto'>
-            <Image className='col-span-7 mb-5 xl:mb-0 w-4xl 2xl:w-full' src={'https://alriswong.github.io/MyPortfolio/image/Project/Catja_Health.png'} width={800} height={450} alt='HP'></Image>
-            <p className='col-span-4 col-start-9 text-subHeadingColor text-xl mb-5'> 
+            className='flex flex-col place-items-center mx-auto'>
+            <Image className='mb-3 xl:mb-0 w-4xl' src={'https://alriswong.github.io/MyPortfolio/image/Project/Catja_Health.png'} width={800} height={450} alt='HP'></Image>
+            <p className='text-contentColor md:text-xl text-center p-3'> 
             The player's health is displayed on the back of the hand.
             </p>
           </motion.div>
@@ -107,9 +107,9 @@ const C_GameplaySection = () => {
             transition={{duration: 1 , type:'spring'}} 
             viewport={{ amount: 0.3, once: true}}
             
-            className='xl:grid xl:grid-cols-12 place-items-center mx-auto'>
-            <Image className='col-span-7 mb-5 xl:mb-0 w-full' src={'https://alriswong.github.io/MyPortfolio/image/Project/C_LevelDesign.png'} width={800} height={450} alt='Level Design'></Image>
-            <p className='col-span-4 col-start-9 text-subHeadingColor text-xl mb-5'> 
+            className='flex flex-col place-items-center mx-auto'>
+            <Image className='mb-3 xl:mb-0 w-4xl' src={'https://alriswong.github.io/MyPortfolio/image/Project/C_LevelDesign.png'} width={800} height={450} alt='Level Design'></Image>
+            <p className='text-contentColor md:text-xl text-center p-3'> 
             The level difficulty increases progressively as the player ascends each floor.
             </p>
           </motion.div>
@@ -127,7 +127,7 @@ const C_GameplaySection = () => {
                 <div className='text-BTcolorOne p-5 2xl:p-10'>
                     <PencilSquareIcon className='h-8 w-8 md:h-10 md:w-10'></PencilSquareIcon>
                 </div>
-                <p className='text-subHeadingColor max-sm:text-center lg:text-xl'>
+                <p className='text-contentColor max-sm:text-center lg:text-xl'>
                     Due to time constraints, the attack and defense features could not be implemented in the final demo showcase.
                 </p>
                 

@@ -7,7 +7,7 @@ const M_HeroSection = () => {
     <section className='2xl:min-h-screen xl:pt-15' >
       <div className='grid grid-cols-1 md:grid-cols-12'>
 
-        <div className='md:col-span-8 md:col-end-7 lg:col-end-8 place-self-center'>
+        <div className='md:col-span-8 md:col-end-7 lg:col-end-8 place-self-center text-center md:text-start'>
           <motion.h1 
           initial= {{opacity:0}} 
           whileInView={{opacity:1}}
@@ -23,7 +23,7 @@ const M_HeroSection = () => {
             transition={{duration: 1 , type:'spring', delay:0.5}} 
             viewport={{ amount: 0.1, once: true}}
             
-            className='text-start text-contentColor text-xl '>During the COVID-19 pandemic, medical professionals were often required to work long hours without sufficient time off or adequate rest, leading to significant mental and physical exhaustion. 
+            className='text-contentColor text-xl '>During the COVID-19 pandemic, medical professionals were often required to work long hours without sufficient time off or adequate rest, leading to significant mental and physical exhaustion. 
               In response, we developed a viral marketing mobile game designed to raise public awareness about the excessive working hours faced by healthcare workers and to encourage greater societal attention to this critical issue.
                         
           </motion.p>

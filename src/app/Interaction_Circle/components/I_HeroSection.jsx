@@ -8,7 +8,7 @@ const I_HeroSection = () => {
     <section className='2xl:min-h-screen xl:pt-25'>
       <div className='grid grid-cols-1 gap-12 xl:grid-cols-12 xl:gap-0'>
 
-        <div className='xl:col-span-5 place-content-center'>
+        <div className='xl:col-span-5 place-content-center text-center xl:text-start'>
           <motion.h1 
             initial= {{opacity:0}} 
             whileInView={{opacity:1}}

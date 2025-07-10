@@ -10,7 +10,7 @@ const projectDetails = [
   {
     icon: <UserIcon className="h-5 w-5" />,
     label: 'Role',
-    value: 'Game Programmer',
+    value: 'Team Leader / Level Design / Game Programmer ',
   },
   {
     icon: <UserGroupIcon className="h-5 w-5" />,
@@ -50,7 +50,7 @@ const C_AboutSection = () => {
           viewport={{ amount: 0.3, once: false}}
   
           className='mb-5 text-center'>
-            <span className='text-transparent text-4xl md:text-5xl font-extrabold bg-clip-text bg-gradient-to-r from-BTcolorOne to-BTcolorTwo'>Project Info</span>
+            <span className='text-transparent text-3xl md:text-4xl xl:text-5xl font-extrabold bg-clip-text bg-gradient-to-r from-BTcolorOne to-BTcolorTwo'>Project Info</span>
         </motion.h1>
         
       </div>
@@ -96,8 +96,15 @@ const C_AboutSection = () => {
                     
           className='xl:col-span-6 xl:col-start-8'>
             <h2 className='text-white font-bold text-2xl pb-3'>Contributions:</h2>
-              <p className='text-subHeadingColor text-xl'>This is the first VR game I developed. I was responsible for the entire game programming and level design.              
-            </p>
+              <p className='text-neutral-500 text-xl'> 
+                <span className='font-bold text-subHeadingColor'>Team Leader </span> - Coordinated the team, managed project timelines, and ensured effective communication among team members.<br/>
+                <br />
+                <span className='font-bold text-subHeadingColor'>Level Design</span> - Designed obstacles with increasing levels of difficulty, where the higher the player climbs, the more challenging the obstacles become.<br/>
+                <br />
+                <span className='font-bold text-subHeadingColor'>Programming</span> - Developed the climbing mechanic using physics-based interactions, allowing the player to grab onto surfaces and ascend in a natural and immersive way. <br/>
+                Programmed the win/lose conditions, including a dynamic health system where falling from different heights results in varying damage even death. <br/>
+                Implemented enemy behaviors, enabling them to launch attacks that the player must dodge or block during the climb. <br/>
+              </p>
 
         </motion.div>
       </div>

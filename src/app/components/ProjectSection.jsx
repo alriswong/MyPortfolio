@@ -51,7 +51,7 @@ const projectData = [
         title: "My Portfolio Website (2025)",
         description: "Frontend Developer",
         technologies: ["Next.js","TailwindCSS","Farmer Motion","EmailJS","Shadcn/ui"], 
-        image: "https://alriswong.github.io/MyPortfolio/image/Project/Alris_My_portfolio.png",
+        image: "/image/Project/MyPortfolio_screenshot.png",
         tag: ["All","Website"],
         
         previewUrl:"/",
@@ -116,7 +116,7 @@ const ProjectSection = () => {
     };
 
   return (
-    <section id='portfolio' className='my-10 pt-20 md:pt-25 xl:pt-35 2xl:pt-40'>
+    <section id='portfolio' className='py-20 2xl:pt-30'>
         <div >
             <motion.h2 
             initial= {{opacity: 0 , scale:0.1}} 
