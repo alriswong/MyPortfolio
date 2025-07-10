@@ -51,7 +51,7 @@ const projectData = [
         title: "My Portfolio Website (2025)",
         description: "Frontend Developer",
         technologies: ["Next.js","TailwindCSS","Farmer Motion","EmailJS","Shadcn/ui"], 
-        image: "/image/Project/MyPortfolio_screenshot.png",
+        image: "https://alriswong.github.io/MyPortfolio/image/Project/MyPortfolio_screenshot.png",
         tag: ["All","Website"],
         
         previewUrl:"/",

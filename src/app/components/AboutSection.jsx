@@ -89,7 +89,7 @@ const AboutSection = () => {
           viewport={{ amount: 0.3, once: false}}
 
           className='col-span-2 mt-20 place-items-center '>
-            <Image className='' src="/image/MyProfilePic.png" width={350} height={350} alt="AboutMe Pic"/>
+            <Image className='' src="https://alriswong.github.io/MyPortfolio/image/MyProfilePic.png" width={350} height={350} alt="AboutMe Pic"/>
         </motion.div>
         
 
