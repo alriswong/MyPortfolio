@@ -149,7 +149,7 @@ const AboutSection = () => {
           viewport={{ amount: 0.3, once: false}}
 
           className='my-10 md:mt-10 flex justify-center'>
-            <Image src="/image/MyProfilePic.png" width={250} height={250} alt="AboutMe Pic" className='w-60'/>
+            <Image src="https://alriswong.github.io/MyPortfolio/image/MyProfilePic.png" width={250} height={250} alt="AboutMe Pic" className='w-60'/>
         </motion.div>
         
 
